@@ -127,17 +127,6 @@ function HeroSection({ t }: { t: TranslationFunction }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Badge */}
-          <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 backdrop-blur-sm mb-6"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <MessageCircle className="w-4 h-4 text-green-400" />
-            <span className="text-sm font-medium">{t('hero.badge')}</span>
-          </motion.div>
-
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             {t('hero.title.start')}{' '}
             <Highlight>{t('hero.title.highlight')}</Highlight>
@@ -162,7 +151,7 @@ function HeroSection({ t }: { t: TranslationFunction }) {
             ].map((feature, index) => (
               <motion.div
                 key={index}
-                className="flex items-center gap-2 px-4 py-2 bg-background-secondary/60 backdrop-blur-md rounded-full border border-white/10"
+                className="flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
