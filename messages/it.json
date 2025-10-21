@@ -744,10 +744,13 @@
       },
       "subtitle": "Gestisci tutte le conversazioni dei clienti da WhatsApp, Instagram, Facebook e altro in un'unica piattaforma integrata con Odoo CRM",
       "features": {
-        "whatsapp": "WhatsApp Business",
+        "whatsapp": "WhatsApp Business API",
         "instagram": "Instagram Direct",
         "multiChannel": "6+ Canali",
-        "automation": "Automazione AI"
+        "automation": "Automazione AI",
+        "ai": "Chatbot AI 24/7",
+        "unified": "Inbox Unificata",
+        "gdpr": "GDPR Compliant"
       },
       "cta": {
         "primary": "Richiedi Demo",
@@ -759,7 +762,7 @@
         "response": "Risposta < 2 min"
       }
     },
-    "whatIs": {
+    "whatis": {
       "title": {
         "start": "Cos'è",
         "highlight": "SuperChat"
@@ -767,18 +770,9 @@
       "subtitle": "La piattaforma di messaggistica aziendale che unifica tutte le tue conversazioni con i clienti",
       "description": "SuperChat è una soluzione di messaggistica unificata che collega tutti i tuoi canali di comunicazione (WhatsApp, Instagram, Facebook Messenger, Email, e altro) in un'unica inbox. Integrato con Odoo, ottieni una visione completa delle interazioni con i clienti e flussi di lavoro automatizzati.",
       "stats": {
-        "openRate": {
-          "value": "90%",
-          "label": "Tasso di Apertura Messaggi"
-        },
-        "automated": {
-          "value": "80%",
-          "label": "Richieste Automatizzate"
-        },
-        "integrations": {
-          "value": "6000+",
-          "label": "Integrazioni Disponibili"
-        }
+        "openrate": "Tasso di Apertura Messaggi",
+        "automated": "Richieste Automatizzate",
+        "integrations": "Integrazioni Disponibili"
       }
     },
     "benefits": {
@@ -791,15 +785,15 @@
         "title": "Inbox Unificata",
         "description": "Gestisci tutti i messaggi da WhatsApp, Instagram, Facebook, Email e altro in un unico posto"
       },
-      "automation": {
+      "ai": {
         "title": "Automazione Intelligente",
         "description": "Automatizza risposte, assegnazioni e follow-up con AI e chatbot potenti"
       },
-      "crmSync": {
-        "title": "Sincronizzazione CRM",
-        "description": "Sincronizzazione bidirezionale automatica tra conversazioni SuperChat e contatti Odoo"
+      "journey": {
+        "title": "Percorso Cliente Completo",
+        "description": "Dal lead al post-vendita in un unico sistema con storico conversazioni completo"
       },
-      "teamwork": {
+      "team": {
         "title": "Collaborazione Team",
         "description": "Assegna conversazioni, lascia note interne e collabora senza problemi con il tuo team"
       },
@@ -807,9 +801,9 @@
         "title": "Analytics e Reporting",
         "description": "Monitora tempi di risposta, soddisfazione clienti e performance del team in tempo reale"
       },
-      "mobile": {
-        "title": "App Mobile",
-        "description": "Rimani connesso e rispondi ai clienti ovunque tu sia con app iOS e Android"
+      "multichannel": {
+        "title": "Multi-Canale",
+        "description": "Gestisci WhatsApp, Instagram, Facebook, Email, Telegram e SMS da un'unica interfaccia"
       }
     },
     "channels": {
@@ -875,7 +869,7 @@
         "description": "Lanciamo il sistema e monitoriamo le performance con supporto continuo"
       }
     },
-    "useCases": {
+    "usecases": {
       "title": {
         "start": "Casi d'Uso",
         "highlight": "Popolari"

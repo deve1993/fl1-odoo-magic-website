@@ -744,10 +744,13 @@
       },
       "subtitle": "Spravujte všechny zákaznické konverzace z WhatsApp, Instagram, Facebook a dalších v jedné platformě integrované s Odoo CRM",
       "features": {
-        "whatsapp": "WhatsApp Business",
+        "whatsapp": "WhatsApp Business API",
         "instagram": "Instagram Direct",
         "multiChannel": "6+ Kanálů",
-        "automation": "AI Automatizace"
+        "automation": "AI Automatizace",
+        "ai": "AI Chatbot 24/7",
+        "unified": "Jednotná Schránka",
+        "gdpr": "GDPR Compliant"
       },
       "cta": {
         "primary": "Požádat o Demo",
@@ -759,7 +762,7 @@
         "response": "Odpověď < 2 min"
       }
     },
-    "whatIs": {
+    "whatis": {
       "title": {
         "start": "Co je",
         "highlight": "SuperChat"
@@ -767,18 +770,9 @@
       "subtitle": "Podniková komunikační platforma, která sjednocuje všechny vaše zákaznické konverzace",
       "description": "SuperChat je řešení jednotné komunikace, které spojuje všechny vaše komunikační kanály (WhatsApp, Instagram, Facebook Messenger, Email a další) do jedné schránky. Integrováno s Odoo získáte kompletní přehled o interakcích se zákazníky a automatizované pracovní postupy.",
       "stats": {
-        "openRate": {
-          "value": "90%",
-          "label": "Míra Otevření Zpráv"
-        },
-        "automated": {
-          "value": "80%",
-          "label": "Automatizované Požadavky"
-        },
-        "integrations": {
-          "value": "6000+",
-          "label": "Dostupných Integrací"
-        }
+        "openrate": "Míra Otevření Zpráv",
+        "automated": "Automatizované Požadavky",
+        "integrations": "Dostupných Integrací"
       }
     },
     "benefits": {
@@ -791,15 +785,15 @@
         "title": "Jednotná Schránka",
         "description": "Spravujte všechny zprávy z WhatsApp, Instagram, Facebook, Email a dalších na jednom místě"
       },
-      "automation": {
+      "ai": {
         "title": "Inteligentní Automatizace",
         "description": "Automatizujte odpovědi, přiřazení a sledování s AI a výkonnými chatboty"
       },
-      "crmSync": {
-        "title": "Synchronizace CRM",
-        "description": "Automatická obousměrná synchronizace mezi konverzacemi SuperChat a kontakty Odoo"
+      "journey": {
+        "title": "Kompletní Zákaznická Cesta",
+        "description": "Od leadu po poprodejní v jednom systému s kompletní historií konverzací"
       },
-      "teamwork": {
+      "team": {
         "title": "Týmová Spolupráce",
         "description": "Přiřazujte konverzace, zanechávejte interní poznámky a spolupracujte bez problémů s týmem"
       },
@@ -807,9 +801,9 @@
         "title": "Analytika a Reportování",
         "description": "Sledujte doby odpovědí, spokojenost zákazníků a výkon týmu v reálném čase"
       },
-      "mobile": {
-        "title": "Mobilní Aplikace",
-        "description": "Zůstaňte připojeni a odpovídejte zákazníkům kdekoli s iOS a Android aplikacemi"
+      "multichannel": {
+        "title": "Multi-Kanálové",
+        "description": "Spravujte WhatsApp, Instagram, Facebook, Email, Telegram a SMS z jednoho rozhraní"
       }
     },
     "channels": {
@@ -875,7 +869,7 @@
         "description": "Spustíme systém a monitorujeme výkon s průběžnou podporou"
       }
     },
-    "useCases": {
+    "usecases": {
       "title": {
         "start": "Populární",
         "highlight": "Případy Použití"
