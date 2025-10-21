@@ -931,15 +931,13 @@
         "price": "€800",
         "badge": "Pro Malé Firmy",
         "ideal": "Ideální pro malé firmy s 1-2 kanály",
-        "setup": "Jednorázové nastavení",
         "cta": "Vybrat Starter",
         "features": {
-          "channels": "2 komunikační kanály (např. WhatsApp + Instagram)",
-          "integration": "Základní integrace s Odoo CRM",
-          "users": "Až 3 uživatelé",
-          "automation": "Základní automatizace (automatické odpovědi)",
-          "support": "5 hodin nastavení a školení",
-          "maintenance": "1 měsíc bezplatná podpora"
+          "channel": "1 Kanál (WhatsApp nebo Instagram)",
+          "setup": "Základní nastavení SuperChat + Odoo",
+          "support": "10 hodin technické podpory",
+          "training": "Základní školení (2 relace)",
+          "updates": "3 měsíce podpora"
         }
       },
       "business": {
@@ -947,35 +945,33 @@
         "price": "€1.500",
         "badge": "⭐ Nejpopulárnější",
         "ideal": "Ideální pro rostoucí firmy s více kanály",
-        "setup": "Jednorázové nastavení",
         "cta": "Vybrat Business",
         "features": {
           "everything": "Vše ze Starteru +",
-          "allChannels": "Všechny kanály (WhatsApp, Instagram, Facebook, Email, atd.)",
-          "unlimitedUsers": "Neomezení uživatelé",
-          "advancedAutomation": "Pokročilé automatizace a AI chatboty",
-          "fullSync": "Plná synchronizace CRM (kontakty, leady, příležitosti)",
+          "channels": "Multi-kanál (WhatsApp, IG, FB, Email)",
+          "ai": "AI Chatbot s automatizacemi",
+          "support": "30 hodin technické podpory",
+          "integrations": "2 vlastní integrace",
+          "priority": "Prioritní podpora (<4h)",
           "analytics": "Pokročilé analytické dashboardy",
-          "training": "10 hodin týmového školení",
-          "extendedSupport": "3 měsíce prioritní podpory"
+          "updates": "6 měsíců podpora"
         }
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Vlastní",
-        "badge": "Kompletní Řešení",
+        "badge": "Enterprise",
         "ideal": "Pro velké organizace se složitými požadavky",
-        "setup": "Kontaktujte nás",
         "cta": "Kontaktujte Nás",
         "features": {
           "everything": "Vše z Business +",
-          "customWorkflows": "Vlastní pracovní postupy",
-          "advancedIntegrations": "Vlastní integrace (ERP, E-commerce, atd.)",
-          "dedicatedManager": "Dedikovaný account manažer",
-          "sla": "Garantované SLA s dobami odpovědi",
-          "whitelabel": "Dostupné white-label možnosti",
-          "training": "Neomezené školení",
-          "support": "Dedikovaná 24/7 podpora"
+          "custom": "Neomezené vlastní automatizace",
+          "dedicated": "Dedikovaný account manažer",
+          "training": "Pokročilé týmové školení",
+          "sla": "Záruka SLA",
+          "api": "Vlastní API integrace",
+          "consulting": "Strategické poradenství",
+          "priority": "Prioritní podpora 24/7"
         }
       }
     },

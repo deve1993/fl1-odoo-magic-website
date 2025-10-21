@@ -931,15 +931,13 @@
         "price": "€800",
         "badge": "Per Piccole Imprese",
         "ideal": "Ideale per piccole imprese con 1-2 canali",
-        "setup": "Setup una tantum",
         "cta": "Scegli Starter",
         "features": {
-          "channels": "2 canali di messaggistica (es. WhatsApp + Instagram)",
-          "integration": "Integrazione base con Odoo CRM",
-          "users": "Fino a 3 utenti",
-          "automation": "Automazioni base (risposte automatiche)",
-          "support": "5 ore setup e formazione",
-          "maintenance": "1 mese supporto gratuito"
+          "channel": "1 Canale (WhatsApp o Instagram)",
+          "setup": "Setup base SuperChat + Odoo",
+          "support": "10 ore supporto tecnico",
+          "training": "Formazione base (2 sessioni)",
+          "updates": "3 mesi supporto"
         }
       },
       "business": {
@@ -947,35 +945,33 @@
         "price": "€1.500",
         "badge": "⭐ Più Popolare",
         "ideal": "Ideale per aziende in crescita con più canali",
-        "setup": "Setup una tantum",
         "cta": "Scegli Business",
         "features": {
           "everything": "Tutto dello Starter +",
-          "allChannels": "Tutti i canali (WhatsApp, Instagram, Facebook, Email, etc.)",
-          "unlimitedUsers": "Utenti illimitati",
-          "advancedAutomation": "Automazioni avanzate e chatbot AI",
-          "fullSync": "Sincronizzazione CRM completa (contatti, lead, opportunità)",
+          "channels": "Multi-canale (WhatsApp, IG, FB, Email)",
+          "ai": "Chatbot AI con automazioni",
+          "support": "30 ore supporto tecnico",
+          "integrations": "2 integrazioni personalizzate",
+          "priority": "Supporto prioritario (<4h)",
           "analytics": "Dashboard analytics avanzati",
-          "training": "10 ore formazione team",
-          "extendedSupport": "3 mesi supporto prioritario"
+          "updates": "6 mesi supporto"
         }
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Personalizzato",
-        "badge": "Soluzione Completa",
+        "badge": "Enterprise",
         "ideal": "Per grandi organizzazioni con esigenze complesse",
-        "setup": "Contattaci",
         "cta": "Contattaci",
         "features": {
           "everything": "Tutto del Business +",
-          "customWorkflows": "Flussi di lavoro personalizzati",
-          "advancedIntegrations": "Integrazioni personalizzate (ERP, E-commerce, etc.)",
-          "dedicatedManager": "Account manager dedicato",
-          "sla": "SLA garantito con tempi risposta",
-          "whitelabel": "Opzioni white-label disponibili",
-          "training": "Formazione illimitata",
-          "support": "Supporto 24/7 dedicato"
+          "custom": "Automazioni personalizzate illimitate",
+          "dedicated": "Account manager dedicato",
+          "training": "Formazione avanzata team",
+          "sla": "Garanzia SLA",
+          "api": "Integrazioni API personalizzate",
+          "consulting": "Consulenza strategica",
+          "priority": "Supporto prioritario 24/7"
         }
       }
     },
