@@ -980,45 +980,25 @@
         "start": "Technické",
         "highlight": "Funkce"
       },
-      "subtitle": "Výkonná a bezpečná integrace postavená pro škálování",
-      "realtime": {
-        "title": "Real-Time Synchronizace",
-        "description": "Okamžitá obousměrná synchronizace mezi konverzacemi a Odoo daty"
-      },
-      "api": {
-        "title": "RESTful API",
-        "description": "Robustní integrace API s bezpečnou autentizací a rate limiting"
-      },
-      "webhooks": {
-        "title": "Webhook Events",
-        "description": "Přijímejte real-time notifikace pro nové zprávy, aktualizace stavu a další"
-      },
-      "security": {
-        "title": "Enterprise Zabezpečení",
-        "description": "End-to-end šifrování, GDPR compliance a bezpečný hosting"
-      },
-      "scalable": {
-        "title": "Škálovatelná Architektura",
-        "description": "Zpracujte tisíce současných konverzací bez degradace výkonu"
-      },
-      "customization": {
-        "title": "Vysoce Přizpůsobitelné",
-        "description": "Přizpůsobte pracovní postupy, pole a automatizace vašim přesným potřebám"
-      }
+      "gdpr": "100% GDPR Compliant",
+      "api": "REST API",
+      "webhook": "Real-time Webhooky",
+      "templates": "Předpřipravené Šablony",
+      "analytics": "Analytics Dashboard",
+      "mobile": "iOS & Android Aplikace"
     },
-    "finalCta": {
+    "cta": {
       "title": {
-        "start": "Připraveni Sjednotit",
-        "highlight": "Zákaznickou Komunikaci"
+        "start": "Připraveni",
+        "highlight": "Začít"
       },
-      "subtitle": "Připojte se ke stovkám firem, které transformovaly zákaznickou podporu s SuperChat + Odoo",
-      "cta": "Požádat o Bezplatnou Demo",
+      "subtitle": "Centralizujte veškerou firemní komunikaci v Odoo s SuperChat",
+      "button": "Požádat o Bezplatnou Konzultaci",
       "trust": {
-        "demo": "Bezplatná demo",
-        "noCommitment": "Žádný závazek",
-        "response": "Odpověď do 24h"
-      },
-      "alternative": "Nebo nám zavolejte:"
+        "support": "Podpora 24/7",
+        "gdpr": "100% GDPR",
+        "certified": "Certifikovaná Integrace"
+      }
     }
   }
 }

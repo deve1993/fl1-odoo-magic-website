@@ -980,45 +980,25 @@
         "start": "Caratteristiche",
         "highlight": "Tecniche"
       },
-      "subtitle": "Integrazione potente e sicura costruita per scalare",
-      "realtime": {
-        "title": "Sincronizzazione Real-Time",
-        "description": "Sincronizzazione bidirezionale istantanea tra conversazioni e dati Odoo"
-      },
-      "api": {
-        "title": "API RESTful",
-        "description": "Integrazione robusta via API con autenticazione sicura e rate limiting"
-      },
-      "webhooks": {
-        "title": "Webhook Events",
-        "description": "Ricevi notifiche real-time per nuovi messaggi, aggiornamenti stato e altro"
-      },
-      "security": {
-        "title": "Sicurezza Enterprise",
-        "description": "Crittografia end-to-end, conformità GDPR e hosting sicuro"
-      },
-      "scalable": {
-        "title": "Architettura Scalabile",
-        "description": "Gestisci migliaia di conversazioni simultanee senza degradazione performance"
-      },
-      "customization": {
-        "title": "Altamente Personalizzabile",
-        "description": "Adatta flussi di lavoro, campi e automazioni alle tue esigenze esatte"
-      }
+      "gdpr": "100% Conforme GDPR",
+      "api": "API REST",
+      "webhook": "Webhook Real-time",
+      "templates": "Template Pre-costruiti",
+      "analytics": "Dashboard Analytics",
+      "mobile": "App iOS & Android"
     },
-    "finalCta": {
+    "cta": {
       "title": {
-        "start": "Pronto a Unificare la Tua",
-        "highlight": "Comunicazione Clienti"
+        "start": "Pronto a",
+        "highlight": "Iniziare"
       },
-      "subtitle": "Unisciti a centinaia di aziende che hanno trasformato il supporto clienti con SuperChat + Odoo",
-      "cta": "Richiedi Demo Gratuita",
+      "subtitle": "Centralizza tutte le comunicazioni aziendali in Odoo con SuperChat",
+      "button": "Richiedi Consulenza Gratuita",
       "trust": {
-        "demo": "Demo gratuita",
-        "noCommitment": "Nessun impegno",
-        "response": "Risposta in 24h"
-      },
-      "alternative": "Oppure chiamaci:"
+        "support": "Supporto 24/7",
+        "gdpr": "100% GDPR",
+        "certified": "Integrazione Certificata"
+      }
     }
   }
 }
