@@ -840,33 +840,41 @@
         "title": "E-commerce",
         "category": "Online Store",
         "description": "Automated customer support and orders directly via WhatsApp",
-        "feature1": "WhatsApp order tracking",
-        "feature2": "AI chatbot for FAQs",
-        "feature3": "Abandoned cart recovery"
+        "features": [
+          "WhatsApp order tracking",
+          "AI chatbot for FAQs",
+          "Abandoned cart recovery"
+        ]
       },
       "service": {
         "title": "Service Business",
         "category": "Appointments",
         "description": "Automatic appointment booking and reminders",
-        "feature1": "Automated bookings via chatbot",
-        "feature2": "WhatsApp reminders",
-        "feature3": "Customer feedback collection"
+        "features": [
+          "Automated bookings via chatbot",
+          "WhatsApp reminders",
+          "Customer feedback collection"
+        ]
       },
       "b2b": {
         "title": "B2B Sales",
         "category": "Lead Management",
         "description": "Lead management and sales communication",
-        "feature1": "Leads from WhatsApp to Odoo CRM",
-        "feature2": "Sales team collaboration",
-        "feature3": "Automated follow-ups"
+        "features": [
+          "Leads from WhatsApp to Odoo CRM",
+          "Sales team collaboration",
+          "Automated follow-ups"
+        ]
       },
       "support": {
         "title": "Customer Support",
         "category": "Helpdesk",
         "description": "Multi-channel support tickets in Odoo",
-        "feature1": "Unified support inbox",
-        "feature2": "AI auto-responses",
-        "feature3": "SLA tracking"
+        "features": [
+          "Unified support inbox",
+          "AI auto-responses",
+          "SLA tracking"
+        ]
       }
     },
     "pricing": {

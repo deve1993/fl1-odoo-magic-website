@@ -31,6 +31,7 @@ import { HeroBackground } from '@/src/components/backgrounds';
 // TypeScript interfaces
 interface TranslationFunction {
   (key: string): string;
+  raw: (key: string) => unknown;
 }
 
 interface BenefitItem {
@@ -500,44 +501,28 @@ function UseCasesSection({ t }: { t: TranslationFunction }) {
       category: t('usecases.ecommerce.category'),
       description: t('usecases.ecommerce.description'),
       gradient: 'from-blue-500 to-cyan-500',
-      features: [
-        t('usecases.ecommerce.feature1'),
-        t('usecases.ecommerce.feature2'),
-        t('usecases.ecommerce.feature3')
-      ]
+      features: t.raw('usecases.ecommerce.features') as string[]
     },
     {
       title: t('usecases.service.title'),
       category: t('usecases.service.category'),
       description: t('usecases.service.description'),
       gradient: 'from-purple-500 to-pink-500',
-      features: [
-        t('usecases.service.feature1'),
-        t('usecases.service.feature2'),
-        t('usecases.service.feature3')
-      ]
+      features: t.raw('usecases.service.features') as string[]
     },
     {
       title: t('usecases.b2b.title'),
       category: t('usecases.b2b.category'),
       description: t('usecases.b2b.description'),
       gradient: 'from-emerald-500 to-teal-500',
-      features: [
-        t('usecases.b2b.feature1'),
-        t('usecases.b2b.feature2'),
-        t('usecases.b2b.feature3')
-      ]
+      features: t.raw('usecases.b2b.features') as string[]
     },
     {
       title: t('usecases.support.title'),
       category: t('usecases.support.category'),
       description: t('usecases.support.description'),
       gradient: 'from-orange-500 to-red-500',
-      features: [
-        t('usecases.support.feature1'),
-        t('usecases.support.feature2'),
-        t('usecases.support.feature3')
-      ]
+      features: t.raw('usecases.support.features') as string[]
     }
   ];
 
