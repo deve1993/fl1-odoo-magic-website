@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useMessages } from 'next-intl';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import {
@@ -31,7 +31,6 @@ import { HeroBackground } from '@/src/components/backgrounds';
 // TypeScript interfaces
 interface TranslationFunction {
   (key: string): string;
-  raw: (key: string) => unknown;
 }
 
 interface BenefitItem {
@@ -60,6 +59,21 @@ interface ProcessStep {
   title: string;
   description: string;
   icon: LucideIcon;
+}
+
+interface UseCaseMessages {
+  ecommerce?: { features?: string[] };
+  service?: { features?: string[] };
+  b2b?: { features?: string[] };
+  support?: { features?: string[] };
+}
+
+interface SuperChatMessages {
+  usecases?: UseCaseMessages;
+}
+
+interface Messages {
+  superChat?: SuperChatMessages;
 }
 
 export default function SuperChatPage() {
@@ -495,34 +509,38 @@ function ProcessSection({ t }: { t: TranslationFunction }) {
 
 // Use Cases Section
 function UseCasesSection({ t }: { t: TranslationFunction }) {
+  const messages = useMessages() as Messages;
+  const superChatMessages = messages.superChat;
+  const usecasesMessages = superChatMessages?.usecases;
+
   const useCases: UseCaseItem[] = [
     {
       title: t('usecases.ecommerce.title'),
       category: t('usecases.ecommerce.category'),
       description: t('usecases.ecommerce.description'),
       gradient: 'from-blue-500 to-cyan-500',
-      features: t.raw('usecases.ecommerce.features') as string[]
+      features: usecasesMessages?.ecommerce?.features || []
     },
     {
       title: t('usecases.service.title'),
       category: t('usecases.service.category'),
       description: t('usecases.service.description'),
       gradient: 'from-purple-500 to-pink-500',
-      features: t.raw('usecases.service.features') as string[]
+      features: usecasesMessages?.service?.features || []
     },
     {
       title: t('usecases.b2b.title'),
       category: t('usecases.b2b.category'),
       description: t('usecases.b2b.description'),
       gradient: 'from-emerald-500 to-teal-500',
-      features: t.raw('usecases.b2b.features') as string[]
+      features: usecasesMessages?.b2b?.features || []
     },
     {
       title: t('usecases.support.title'),
       category: t('usecases.support.category'),
       description: t('usecases.support.description'),
       gradient: 'from-orange-500 to-red-500',
-      features: t.raw('usecases.support.features') as string[]
+      features: usecasesMessages?.support?.features || []
     }
   ];
 
