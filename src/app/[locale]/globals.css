@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  /* Dark Theme Colors */
+  --background: #0a0e1a;
+  --background-secondary: #111827;
+  --foreground: #f3f4f6;
+  --foreground-muted: #9ca3af;
+
+  /* FL1 Brand Colors - Blue Gradients */
+  --fl1-blue-primary: #448CFB;
+  --fl1-blue-dark: #4475F5;
+  --fl1-blue-medium: #448CE6;
+  --fl1-blue-accent: #2D8CE7;
+  --fl1-blue-light: #5592F7;
+  --fl1-blue-lighter: #74C1FF;
+  --fl1-blue-lightest: #63BAFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --font-sans: var(--font-inter);
+
+  /* FL1 Brand Color Tokens */
+  --color-primary: var(--fl1-blue-primary);
+  --color-primary-dark: var(--fl1-blue-dark);
+  --color-primary-medium: var(--fl1-blue-medium);
+  --color-accent: var(--fl1-blue-accent);
+  --color-primary-light: var(--fl1-blue-light);
+  --color-primary-lighter: var(--fl1-blue-lighter);
+  --color-primary-lightest: var(--fl1-blue-lightest);
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+
+  /* Dark Theme Background - Deep Blue Gradient */
+  background: linear-gradient(
+    135deg,
+    #0a0e1a 0%,
+    #111827 25%,
+    #0f1729 50%,
+    #1a1f35 75%,
+    #0a0e1a 100%
+  );
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+}
+
+/* Subtle animated gradient effect */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fl1-blue-primary);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fl1-blue-light);
+}

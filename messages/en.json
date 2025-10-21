@@ -1,0 +1,736 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "odoo-dev": "Odoo Development",
+      "3cx": "3CX Integration",
+      "website-dev": "Website Development",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "getStarted": "Get Started",
+      "learnMore": "Learn More",
+      "contactUs": "Contact Us",
+      "sendMessage": "Send Message"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Odoo Magic",
+      "subtitle": "Transform your business with expert Odoo solutions",
+      "description": "Skilled developers with years of Odoo experience. Customer satisfaction is our priority.",
+      "features": {
+        "fastImplementation": "Fast Implementation",
+        "customSolutions": "Custom Solutions",
+        "secureReliable": "Secure & Reliable",
+        "premiumSupport": "Premium Support"
+      },
+      "trustIndicators": {
+        "yearsExperience": "Years Experience",
+        "projectsDone": "Projects Done",
+        "clientSatisfaction": "Client Satisfaction"
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive Odoo solutions for growing businesses",
+      "odooDev": {
+        "title": "Odoo Development",
+        "description": "Expert development and implementation for all Odoo versions. Custom modules, integrations, and full technical support."
+      },
+      "3cx": {
+        "title": "3CX Integration",
+        "description": "Seamless integration of telephony, video, and chat with your Odoo system for enhanced communication."
+      },
+      "websiteDev": {
+        "title": "Website Development",
+        "description": "Modern, responsive websites built with React and Next.js. Performance-focused, SEO optimized, and designed for conversions.",
+        "badge": "React/Next.js experts"
+      },
+      "cloudMigration": {
+        "title": "Cloud Migration",
+        "description": "Seamless migration of your systems to cloud infrastructure with zero downtime and maximum security.",
+        "badge": "99.9% uptime guaranteed"
+      },
+      "erpImplementation": {
+        "title": "ERP Implementation",
+        "description": "Full-scale Odoo ERP implementation and customization tailored to streamline your business operations."
+      },
+      "businessIntegration": {
+        "title": "Business Integration",
+        "description": "Connect your systems with custom API development and third-party integrations for seamless workflows.",
+        "badge": "50+ integrations delivered"
+      }
+    },
+    "whyChoose": {
+      "title": "Why FL1?",
+      "subtitle": "Your trusted partner for Odoo excellence",
+      "expertTeam": {
+        "title": "Expert Team",
+        "description": "Years of experience with Odoo development and implementation",
+        "stat": "10+",
+        "statLabel": "Years"
+      },
+      "customerFocus": {
+        "title": "Customer Focus",
+        "description": "Your satisfaction is our top priority",
+        "stat": "100%",
+        "statLabel": "Satisfaction"
+      },
+      "fullSupport": {
+        "title": "Full Support",
+        "description": "Comprehensive technical support whenever you need it",
+        "stat": "24/7",
+        "statLabel": "Available"
+      },
+      "provenResults": {
+        "title": "Proven Results",
+        "description": "Successful implementations for growing businesses",
+        "stat": "50+",
+        "statLabel": "Projects"
+      }
+    }
+  },
+  "odooDev": {
+    "hero": {
+      "badge": "🏆 Odoo Gold Partner",
+      "title": "Professional Odoo Development",
+      "subtitle": "Complete implementation, training, and support tailored to your business needs",
+      "features": {
+        "fastSetup": "Setup in 2 weeks",
+        "italianSupport": "Italian Support",
+        "flexiblePackages": "2 Flexible Packages",
+        "trainingIncluded": "Training Included"
+      },
+      "cta": {
+        "primary": "Get Quote",
+        "secondary": "See Packages"
+      },
+      "trust": {
+        "partner": "Odoo Partner",
+        "projects": "50+ Completed Projects",
+        "support": "24/7 Support"
+      },
+      "stats": {
+        "years": "Years",
+        "projects": "Projects",
+        "satisfaction": "Satisfied"
+      }
+    },
+    "painPoints": {
+      "title": "Is your current system slowing you down?",
+      "subtitle": "These obstacles are blocking your growth",
+      "scattered": "Scattered spreadsheets and disconnected apps",
+      "manual": "Manual processes eating your time",
+      "noVisibility": "No real-time visibility into your business",
+      "hardToScale": "Difficult to scale as you grow"
+    },
+    "pricing": {
+      "title": "Choose Your Package",
+      "subtitle": "Transparent pricing, no hidden fees",
+      "standard": {
+        "name": "Standard Package",
+        "price": "€1,500",
+        "badge": "For Startups",
+        "ideal": "Ideal for startups and small businesses (< 10 users)",
+        "cta": "Choose Standard",
+        "features": {
+          "module": "1 Core Odoo module (CRM, Sales, or Inventory)",
+          "setup": "Initial setup and basic data migration",
+          "support": "10 hours technical support (first month)",
+          "training": "Basic training (2 sessions × 2h)",
+          "docs": "Standard documentation",
+          "updates": "Updates for 3 months"
+        }
+      },
+      "maxi": {
+        "name": "Maxi Package",
+        "price": "€2,500",
+        "badge": "⭐ Recommended",
+        "ideal": "Ideal for growing SMEs (10-50 users)",
+        "cta": "Choose Maxi",
+        "features": {
+          "everything": "Everything in Standard +",
+          "customModules": "2 Custom or advanced modules",
+          "extendedSupport": "30 hours technical support (first 3 months)",
+          "advancedTraining": "Advanced training (5 sessions × 2h)",
+          "integrations": "2 API integrations (third-party, e-commerce, etc.)",
+          "prioritySupport": "Priority support (response < 4h)",
+          "extendedDocs": "Extended documentation + video tutorials",
+          "extendedUpdates": "Updates for 6 months",
+          "optimization": "1 Post-launch optimization session"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Detailed Comparison",
+      "features": "Features",
+      "customModules": "Custom Modules",
+      "supportHours": "Support Hours (first 3 months)",
+      "training": "Training Hours",
+      "apiIntegrations": "API Integrations",
+      "prioritySupport": "Priority Support (<4h)",
+      "updates": "Updates Period",
+      "optimization": "Post-Launch Optimization"
+    },
+    "included": {
+      "title": "What's Included",
+      "subtitle": "Everything you need to succeed with Odoo",
+      "setup": {
+        "title": "Professional Setup",
+        "description": "Complete Odoo configuration tailored to your business needs"
+      },
+      "training": {
+        "title": "Comprehensive Training",
+        "description": "Hands-on training sessions to get your team up to speed"
+      },
+      "support": {
+        "title": "Technical Support",
+        "description": "Expert support when you need it, in your language"
+      },
+      "updates": {
+        "title": "Regular Updates",
+        "description": "Keep your system secure and up-to-date"
+      },
+      "docs": {
+        "title": "Documentation",
+        "description": "Detailed guides and video tutorials for your team"
+      },
+      "migration": {
+        "title": "Data Migration",
+        "description": "Safe and complete transfer of your existing data"
+      }
+    },
+    "process": {
+      "title": "Implementation Process",
+      "subtitle": "From discovery to go-live in 4 simple steps",
+      "discovery": {
+        "title": "Discovery",
+        "description": "We analyze your needs and design the perfect solution"
+      },
+      "setup": {
+        "title": "Setup & Configuration",
+        "description": "Install, configure, and customize Odoo for your business"
+      },
+      "training": {
+        "title": "Training",
+        "description": "Comprehensive training for your team"
+      },
+      "golive": {
+        "title": "Go Live & Support",
+        "description": "Launch your system with ongoing support"
+      }
+    },
+    "finalCta": {
+      "urgency": "Only 3 slots available this month",
+      "title": "Ready to Transform Your Business?",
+      "subtitle": "Get a free consultation and discover how Odoo can revolutionize your operations",
+      "button": "Book Free Consultation",
+      "trust": {
+        "free": "Free consultation",
+        "noCommitment": "No commitment",
+        "response": "Response in 24h"
+      },
+      "alternative": "Or call us:"
+    },
+    "services": {
+      "title": "What We Offer",
+      "maintenance": {
+        "title": "Maintenance & Upgrades",
+        "description": "Keep your Odoo system up-to-date and secure"
+      },
+      "implementation": {
+        "title": "Full-Scale Implementation",
+        "description": "From analysis to launch of your Odoo system"
+      },
+      "customModules": {
+        "title": "Custom Modules",
+        "description": "Build modules tailored to your exact needs"
+      },
+      "integration": {
+        "title": "System Integration",
+        "description": "Connect Odoo with your existing systems"
+      },
+      "support": {
+        "title": "Technical Support",
+        "description": "Fast and professional support whenever you need it"
+      },
+      "optimization": {
+        "title": "Performance Optimization",
+        "description": "Improve speed and efficiency of your system"
+      }
+    }
+  },
+  "3cx": {
+    "hero": {
+      "title": "3CX Integration",
+      "subtitle": "Seamless integration of telephony, video, and chat with Odoo"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Our Story",
+      "title": {
+        "start": "We Are",
+        "highlight": "FL1"
+      },
+      "subtitle": "We transform businesses with innovative Odoo solutions and cutting-edge web development",
+      "description": "Since 2015, we've been helping companies grow through expert Odoo implementations, seamless integrations, and modern web experiences.",
+      "trust": {
+        "years": "Years",
+        "projects": "Projects",
+        "satisfaction": "Satisfaction"
+      },
+      "cta": {
+        "services": "Discover Our Services",
+        "contact": "Get in Touch"
+      }
+    },
+    "story": {
+      "title": {
+        "start": "Our",
+        "highlight": "Journey"
+      },
+      "subtitle": "From a small team with big dreams to your trusted technology partner",
+      "milestone1": {
+        "title": "The Beginning",
+        "description": "Founded by a passionate team of Italian developers with a vision to make Odoo accessible to businesses of all sizes."
+      },
+      "milestone2": {
+        "title": "Odoo Gold Partner",
+        "description": "Achieved Odoo Gold Partner status, recognizing our expertise and commitment to excellence in Odoo implementation."
+      },
+      "milestone3": {
+        "title": "Team Expansion",
+        "description": "Grew our team to 10+ specialized professionals, expanding services to include 3CX integration and web development."
+      },
+      "milestone4": {
+        "title": "Innovation Leader",
+        "description": "Reached 50+ successful projects and 1000+ downloads of our 3CX module, becoming a trusted name in the industry."
+      }
+    },
+    "values": {
+      "title": {
+        "start": "Our",
+        "highlight": "Values"
+      },
+      "subtitle": "The principles that guide everything we do",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly explore new technologies and methodologies to deliver cutting-edge solutions that keep you ahead."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Every line of code, every implementation, every interaction is crafted with meticulous attention to detail and excellence."
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Clear communication, honest pricing, and open collaboration. You always know what's happening with your project."
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "Your success is our success. We're not satisfied until you are thrilled with the results we deliver."
+      }
+    },
+    "team": {
+      "title": {
+        "start": "Meet Our",
+        "highlight": "Team"
+      },
+      "subtitle": "The talented people who make it all happen",
+      "member1": {
+        "name": "Roberto Cotti",
+        "role": "Founder & Full Stack Developer",
+        "description": "10+ years in Odoo development. Passionate about creating solutions that transform businesses."
+      },
+      "member2": {
+        "name": "Eduard Bianchi",
+        "role": "Technical Lead",
+        "description": "Expert in system integration and architecture. Ensures every project runs smoothly."
+      },
+      "member3": {
+        "name": "Daniel De Vecchi",
+        "role": "Co-Founder & Frontend Specialist",
+        "description": "Creates beautiful, performant web experiences with React and Next.js."
+      },
+      "member4": {
+        "name": "Asia Conti",
+        "role": "Customer Success",
+        "description": "Ensures clients get maximum value from their Odoo implementation."
+      }
+    },
+    "numbers": {
+      "title": {
+        "start": "Success in",
+        "highlight": "Numbers"
+      },
+      "subtitle": "Achievements that speak for themselves",
+      "projects": "Projects Completed",
+      "years": "Years of Experience",
+      "downloads": "3CX Module Downloads",
+      "satisfaction": "Client Satisfaction"
+    },
+    "partners": {
+      "title": {
+        "start": "Partners &",
+        "highlight": "Certifications"
+      },
+      "subtitle": "Trusted by industry leaders and certified professionals",
+      "odoo": "Odoo Gold Partner",
+      "3cx": "3CX Certified",
+      "react": "React Experts",
+      "nextjs": "Next.js Specialists",
+      "iso": "ISO Certified",
+      "eu": "EU Partner"
+    },
+    "cta": {
+      "title": {
+        "start": "Ready to Work",
+        "highlight": "Together"
+      },
+      "subtitle": "Let's build something amazing for your business",
+      "contact": "Get in Touch",
+      "services": "Our Services"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Get in Touch",
+      "title": {
+        "start": "Let's Talk About Your",
+        "highlight": "Project"
+      },
+      "subtitle": "We're here to help transform your business vision into reality"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "Fill out the form and we'll get back to you within 24 hours",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "service": "Service of Interest",
+        "message": "Your Message"
+      },
+      "placeholders": {
+        "name": "Mario Rossi",
+        "email": "mario@company.com",
+        "phone": "+39 123 456 7890",
+        "service": "Select a service...",
+        "message": "Tell us about your project or requirements..."
+      },
+      "services": {
+        "odoo": "Odoo Development",
+        "website": "Website Development",
+        "consulting": "Consulting & Support",
+        "other": "Other Services"
+      },
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "email": {
+        "label": "Email",
+        "value": "bo2@fl1.cz"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+420 775 113 732"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Moskevská 1464/61, Vršovice, 101 00 Praha 10"
+      },
+      "hours": {
+        "label": "Working Hours",
+        "value": "Mon-Fri: 9:00 - 18:00"
+      }
+    }
+  },
+  "websiteDev": {
+    "hero": {
+      "badge": "Web Development Experts",
+      "title": {
+        "start": "We Build",
+        "highlight": "Modern Web Experiences"
+      },
+      "subtitle": "From landing pages to complex web apps. Fast, beautiful, and optimized for success.",
+      "cta": {
+        "primary": "Start Your Project",
+        "secondary": "View Portfolio"
+      },
+      "features": {
+        "fast": "2-4 Week Delivery",
+        "performance": "Lighthouse 90+",
+        "seo": "SEO Optimized",
+        "transparent": "Transparent Pricing"
+      }
+    },
+    "techStack": {
+      "title": {
+        "start": "Powered by",
+        "highlight": "Modern Tech"
+      },
+      "subtitle": "We use the best technologies to build fast, scalable, and maintainable applications"
+    },
+    "services": {
+      "title": {
+        "start": "What We",
+        "highlight": "Build"
+      },
+      "subtitle": "Comprehensive web development services for every need",
+      "landing": {
+        "title": "Landing Pages",
+        "description": "High-converting landing pages designed to capture leads and drive sales"
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Complete online stores with payment integration and inventory management"
+      },
+      "webapp": {
+        "title": "Web Applications",
+        "description": "Custom SaaS platforms and web apps built for scale and performance"
+      },
+      "dashboard": {
+        "title": "Dashboards",
+        "description": "Data visualization and admin panels for managing your business"
+      },
+      "maintenance": {
+        "title": "Maintenance & Support",
+        "description": "Ongoing support, updates, and improvements for your website"
+      }
+    },
+    "projects": {
+      "title": {
+        "start": "Featured",
+        "highlight": "Projects"
+      },
+      "subtitle": "Examples of our work across different industries",
+      "project1": {
+        "title": "E-commerce Platform",
+        "category": "Online Store",
+        "description": "Modern e-commerce with 5000+ products and real-time inventory"
+      },
+      "project2": {
+        "title": "SaaS Dashboard",
+        "category": "Web App",
+        "description": "Analytics platform processing 1M+ events daily"
+      },
+      "project3": {
+        "title": "Corporate Website",
+        "category": "Landing Page",
+        "description": "Multi-language corporate site with CMS integration"
+      },
+      "project4": {
+        "title": "Booking System",
+        "category": "Web App",
+        "description": "Real-time reservation platform with calendar sync"
+      }
+    },
+    "process": {
+      "title": {
+        "start": "Development",
+        "highlight": "Process"
+      },
+      "subtitle": "From idea to launch in 4 simple steps",
+      "step1": {
+        "title": "Discovery & Planning",
+        "description": "We analyze your needs and create a detailed roadmap for success"
+      },
+      "step2": {
+        "title": "Design & Prototyping",
+        "description": "Beautiful UI/UX design that converts visitors into customers"
+      },
+      "step3": {
+        "title": "Development & Testing",
+        "description": "Clean code, rigorous testing, and performance optimization"
+      },
+      "step4": {
+        "title": "Launch & Support",
+        "description": "Smooth deployment with ongoing maintenance and updates"
+      }
+    },
+    "features": {
+      "title": {
+        "start": "Why Choose",
+        "highlight": "Us"
+      },
+      "subtitle": "What makes our development approach unique",
+      "fast": {
+        "title": "Rapid Development",
+        "description": "Launch your project in 2-4 weeks with our streamlined process"
+      },
+      "performance": {
+        "title": "Peak Performance",
+        "description": "Lighthouse scores 90+ guaranteed. Fast loading, smooth interactions"
+      },
+      "seo": {
+        "title": "SEO First",
+        "description": "Built-in SEO optimization for maximum visibility on search engines"
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "Clear, upfront pricing with no hidden fees or surprises"
+      }
+    },
+    "pricing": {
+      "title": {
+        "start": "Simple",
+        "highlight": "Pricing"
+      },
+      "subtitle": "Quality web development starting from €1,500",
+      "from": "From",
+      "description": "Complete web development package including design, development, testing, and deployment",
+      "features": {
+        "feature1": "Custom responsive design",
+        "feature2": "SEO optimization",
+        "feature3": "Performance optimization",
+        "feature4": "CMS integration",
+        "feature5": "1 month free support",
+        "feature6": "SSL certificate included"
+      },
+      "cta": "Get Custom Quote",
+      "note": "Final price depends on project complexity and requirements"
+    },
+    "finalCta": {
+      "title": {
+        "start": "Ready to Build",
+        "highlight": "Something Amazing"
+      },
+      "subtitle": "Let's transform your vision into a stunning web experience",
+      "cta": "Start Your Project Today"
+    }
+  },
+  "cta": {
+    "headline": "Stop Juggling Tools.",
+    "headlineHighlight": "Start Growing.",
+    "subtitle": "Join 50+ companies that replaced scattered spreadsheets and disconnected apps with one intelligent platform. Get real-time visibility, automated workflows, and the freedom to focus on what matters.",
+    "benefits": {
+      "realTimeInsights": "Real-time insights across your entire business",
+      "automatedWorkflows": "Automated workflows that save 20+ hours/week",
+      "seamlessIntegration": "Seamless integration with existing tools",
+      "scalableGrowth": "Scalable growth without technical headaches"
+    },
+    "buttons": {
+      "consultation": "Get Free Consultation"
+    },
+    "trustIndicators": {
+      "certifiedLabel": "Certified",
+      "certifiedValue": "Odoo Gold Partner",
+      "successfullyLabel": "Successfully",
+      "successfullyValue": "50+ Implementations"
+    }
+  },
+  "3cx": {
+    "hero": {
+      "badge": "1093+ Downloads on Odoo Store",
+      "title": {
+        "highlight1": "3CX",
+        "middle": "Integration with",
+        "highlight2": "Odoo"
+      },
+      "subtitle": {
+        "start": "Connect your phone system with",
+        "highlight": "Odoo CRM",
+        "end": "and streamline your business communications"
+      },
+      "features": {
+        "unifiedComms": "Unified Communications",
+        "mobileApps": "Mobile Apps",
+        "videoConf": "Video Conferencing",
+        "integration": "Odoo Integration"
+      },
+      "pricing": {
+        "label": "Installation Package",
+        "price": "€400",
+        "description": "One-time setup fee"
+      },
+      "cta": "Request Installation",
+      "trust": {
+        "downloads": "1093+ downloads",
+        "certified": "3CX Certified",
+        "support": "Italian Support"
+      }
+    },
+    "included": {
+      "title": {
+        "start": "What's",
+        "highlight": "Included"
+      },
+      "subtitle": "Complete 3CX integration with powerful features",
+      "lookup": {
+        "title": "Automatic Call Lookup",
+        "description": "Instantly identify incoming calls by querying your Odoo database for lead and contact information"
+      },
+      "realtime": {
+        "title": "Real-Time Database Query",
+        "description": "Query your Odoo database in real-time on every incoming call for up-to-date customer information"
+      },
+      "contacts": {
+        "title": "Lead & Contact Display",
+        "description": "View complete customer details including name, company, and sales history before answering"
+      },
+      "multichannel": {
+        "title": "Multi-Channel Integration",
+        "description": "Seamless integration of telephony, video conferencing, and chat with Odoo"
+      },
+      "configuration": {
+        "title": "Easy Configuration",
+        "description": "Simple setup through Odoo system parameters with guided installation process"
+      },
+      "api": {
+        "title": "API Authentication",
+        "description": "Secure API key authentication for reliable communication between 3CX and Odoo"
+      }
+    },
+    "howItWorks": {
+      "title": {
+        "start": "How It",
+        "highlight": "Works"
+      },
+      "subtitle": "Simple 4-step process for seamless integration",
+      "step1": {
+        "title": "Incoming Call",
+        "description": "3CX intercepts the incoming call and captures the caller's number"
+      },
+      "step2": {
+        "title": "Database Query",
+        "description": "System automatically queries Odoo database for matching leads and contacts"
+      },
+      "step3": {
+        "title": "Display Info",
+        "description": "Customer information appears instantly on your screen with complete details"
+      },
+      "step4": {
+        "title": "Better Service",
+        "description": "Answer calls knowing exactly who's calling and their complete history"
+      }
+    },
+    "whyChoose": {
+      "title": {
+        "start": "Why Choose",
+        "highlight": "FL1"
+      },
+      "subtitle": "The trusted choice for 3CX integration with Odoo",
+      "trusted": {
+        "title": "1093+ Downloads",
+        "description": "Trusted by businesses worldwide on Odoo Apps Store"
+      },
+      "allVersions": {
+        "title": "All Odoo Versions",
+        "description": "Compatible with all Odoo versions including the latest v17"
+      },
+      "quickSetup": {
+        "title": "Quick Installation",
+        "description": "Fast setup process with immediate results and minimal downtime"
+      },
+      "italianSupport": {
+        "title": "Italian Support",
+        "description": "Dedicated Italian-speaking support team ready to help"
+      }
+    }
+  }
+}

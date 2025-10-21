@@ -1,0 +1,736 @@
+{
+  "common": {
+    "nav": {
+      "home": "Domů",
+      "services": "Služby",
+      "odoo-dev": "Odoo Vývoj",
+      "3cx": "3CX Integrace",
+      "website-dev": "Vývoj webových stránek",
+      "about": "O nás",
+      "contact": "Kontakt"
+    },
+    "buttons": {
+      "getStarted": "Začít",
+      "learnMore": "Zjistit více",
+      "contactUs": "Kontaktujte nás",
+      "sendMessage": "Odeslat zprávu"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Odoo Magic",
+      "subtitle": "Transformujeme vaše podnikání s expertními Odoo řešeními",
+      "description": "Zkušení vývojáři s mnohaletými zkušenostmi s Odoo. Prioritou je spokojenost zákazníka.",
+      "features": {
+        "fastImplementation": "Rychlá Implementace",
+        "customSolutions": "Vlastní Řešení",
+        "secureReliable": "Bezpečné a Spolehlivé",
+        "premiumSupport": "Prémiová Podpora"
+      },
+      "trustIndicators": {
+        "yearsExperience": "Let Zkušeností",
+        "projectsDone": "Dokončených Projektů",
+        "clientSatisfaction": "Spokojenost Klientů"
+      }
+    },
+    "services": {
+      "title": "Naše služby",
+      "subtitle": "Komplexní Odoo řešení pro rostoucí firmy",
+      "odooDev": {
+        "title": "Odoo Vývoj",
+        "description": "Expertní vývoj a implementace pro všechny verze Odoo. Vlastní moduly, integrace a kompletní technická podpora."
+      },
+      "3cx": {
+        "title": "3CX Integrace",
+        "description": "Bezproblémová integrace telefonie, videa a chatu s vaším Odoo systémem pro vylepšenou komunikaci."
+      },
+      "websiteDev": {
+        "title": "Vývoj Webových Stránek",
+        "description": "Moderní, responzivní webové stránky vytvořené s React a Next.js. Zaměřené na výkon, SEO optimalizované a navržené pro konverze.",
+        "badge": "React/Next.js experti"
+      },
+      "cloudMigration": {
+        "title": "Cloud Migrace",
+        "description": "Plynulá migrace vašich systémů do cloudové infrastruktury s nulovou простоdou a maximální bezpečností.",
+        "badge": "99,9% dostupnost zaručena"
+      },
+      "erpImplementation": {
+        "title": "ERP Implementace",
+        "description": "Rozsáhlá implementace a přizpůsobení Odoo ERP pro zefektivnění vašich obchodních operací."
+      },
+      "businessIntegration": {
+        "title": "Obchodní Integrace",
+        "description": "Propojte své systémy s vlastním vývojem API a integrací třetích stran pro bezproblémové pracovní postupy.",
+        "badge": "50+ doručených integrací"
+      }
+    },
+    "whyChoose": {
+      "title": "Proč FL1?",
+      "subtitle": "Váš spolehlivý partner pro Odoo excelenci",
+      "expertTeam": {
+        "title": "Expertní Tým",
+        "description": "Roky zkušeností s vývojem a implementací Odoo",
+        "stat": "10+",
+        "statLabel": "Let"
+      },
+      "customerFocus": {
+        "title": "Zaměření na Zákazníka",
+        "description": "Vaše spokojenost je naší nejvyšší prioritou",
+        "stat": "100%",
+        "statLabel": "Spokojenost"
+      },
+      "fullSupport": {
+        "title": "Plná Podpora",
+        "description": "Komplexní technická podpora kdykoli ji potřebujete",
+        "stat": "24/7",
+        "statLabel": "Dostupný"
+      },
+      "provenResults": {
+        "title": "Prokázané Výsledky",
+        "description": "Úspěšné implementace pro rostoucí firmy",
+        "stat": "50+",
+        "statLabel": "Projektů"
+      }
+    }
+  },
+  "odooDev": {
+    "hero": {
+      "badge": "🏆 Odoo Gold Partner",
+      "title": "Profesionální Odoo Vývoj",
+      "subtitle": "Kompletní implementace, školení a podpora šitá na míru vašim obchodním potřebám",
+      "features": {
+        "fastSetup": "Nastavení za 2 týdny",
+        "italianSupport": "Italská Podpora",
+        "flexiblePackages": "2 Flexibilní Balíčky",
+        "trainingIncluded": "Školení Zahrnuto"
+      },
+      "cta": {
+        "primary": "Nabídka",
+        "secondary": "Balíčky"
+      },
+      "trust": {
+        "partner": "Odoo Partner",
+        "projects": "50+ Dokončených Projektů",
+        "support": "Podpora 24/7"
+      },
+      "stats": {
+        "years": "Let",
+        "projects": "Projektů",
+        "satisfaction": "Spokojení"
+      }
+    },
+    "painPoints": {
+      "title": "Zpomaluje vás váš současný systém?",
+      "subtitle": "Tyto překážky blokují váš růst",
+      "scattered": "Roztroušené tabulky a odpojené aplikace",
+      "manual": "Manuální procesy, které vás stojí čas",
+      "noVisibility": "Žádný přehled o vašem podnikání v reálném čase",
+      "hardToScale": "Obtížné škálování při růstu"
+    },
+    "pricing": {
+      "title": "Vyberte si Svůj Balíček",
+      "subtitle": "Transparentní ceny, žádné skryté poplatky",
+      "standard": {
+        "name": "Standardní Balíček",
+        "price": "€1.500",
+        "badge": "Pro Startupy",
+        "ideal": "Ideální pro startupy a malé firmy (< 10 uživatelů)",
+        "cta": "Vybrat Standard",
+        "features": {
+          "module": "1 Hlavní Odoo modul (CRM, Prodej nebo Sklad)",
+          "setup": "Počáteční nastavení a základní migrace dat",
+          "support": "10 hodin technické podpory (první měsíc)",
+          "training": "Základní školení (2 relace × 2h)",
+          "docs": "Standardní dokumentace",
+          "updates": "Aktualizace po dobu 3 měsíců"
+        }
+      },
+      "maxi": {
+        "name": "Maxi Balíček",
+        "price": "€2.500",
+        "badge": "⭐ Doporučeno",
+        "ideal": "Ideální pro rostoucí SME (10-50 uživatelů)",
+        "cta": "Vybrat Maxi",
+        "features": {
+          "everything": "Vše ze Standardu +",
+          "customModules": "2 Vlastní nebo pokročilé moduly",
+          "extendedSupport": "30 hodin technické podpory (první 3 měsíce)",
+          "advancedTraining": "Pokročilé školení (5 relací × 2h)",
+          "integrations": "2 API integrace (třetí strany, e-commerce atd.)",
+          "prioritySupport": "Prioritní podpora (odpověď < 4h)",
+          "extendedDocs": "Rozšířená dokumentace + video tutoriály",
+          "extendedUpdates": "Aktualizace po dobu 6 měsíců",
+          "optimization": "1 Optimalizační relace po spuštění"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Podrobné Porovnání",
+      "features": "Funkce",
+      "customModules": "Vlastní Moduly",
+      "supportHours": "Hodiny Podpory (první 3 měsíce)",
+      "training": "Hodiny Školení",
+      "apiIntegrations": "API Integrace",
+      "prioritySupport": "Prioritní Podpora (<4h)",
+      "updates": "Období Aktualizací",
+      "optimization": "Optimalizace Po Spuštění"
+    },
+    "included": {
+      "title": "Co Je Zahrnuto",
+      "subtitle": "Vše, co potřebujete k úspěchu s Odoo",
+      "setup": {
+        "title": "Profesionální Nastavení",
+        "description": "Kompletní konfigurace Odoo přizpůsobená vašim obchodním potřebám"
+      },
+      "training": {
+        "title": "Komplexní Školení",
+        "description": "Praktická školení, aby váš tým rychle začal"
+      },
+      "support": {
+        "title": "Technická Podpora",
+        "description": "Odborná podpora, když ji potřebujete, ve vašem jazyce"
+      },
+      "updates": {
+        "title": "Pravidelné Aktualizace",
+        "description": "Udržujte váš systém bezpečný a aktuální"
+      },
+      "docs": {
+        "title": "Dokumentace",
+        "description": "Podrobné průvodce a video tutoriály pro váš tým"
+      },
+      "migration": {
+        "title": "Migrace Dat",
+        "description": "Bezpečný a kompletní přenos vašich existujících dat"
+      }
+    },
+    "process": {
+      "title": "Proces Implementace",
+      "subtitle": "Od objevování po spuštění ve 4 jednoduchých krocích",
+      "discovery": {
+        "title": "Objevování",
+        "description": "Analyzujeme vaše potřeby a navrhujeme perfektní řešení"
+      },
+      "setup": {
+        "title": "Nastavení a Konfigurace",
+        "description": "Instalujeme, konfigurujeme a přizpůsobujeme Odoo pro vaši firmu"
+      },
+      "training": {
+        "title": "Školení",
+        "description": "Komplexní školení pro váš tým"
+      },
+      "golive": {
+        "title": "Spuštění a Podpora",
+        "description": "Spouštíme váš systém s průběžnou podporou"
+      }
+    },
+    "finalCta": {
+      "urgency": "Pouze 3 volné termíny tento měsíc",
+      "title": "Připraveni Transformovat Vaše Podnikání?",
+      "subtitle": "Získejte bezplatnou konzultaci a zjistěte, jak může Odoo revolucionalizovat vaše operace",
+      "button": "Rezervovat Bezplatnou Konzultaci",
+      "trust": {
+        "free": "Bezplatná konzultace",
+        "noCommitment": "Žádný závazek",
+        "response": "Odpověď do 24h"
+      },
+      "alternative": "Nebo nám zavolejte:"
+    },
+    "services": {
+      "title": "Co nabízíme",
+      "maintenance": {
+        "title": "Údržba a aktualizace",
+        "description": "Udržujeme váš Odoo systém aktuální a bezpečný"
+      },
+      "implementation": {
+        "title": "Kompletní implementace",
+        "description": "Od analýzy až po spuštění vašeho Odoo systému"
+      },
+      "customModules": {
+        "title": "Vlastní moduly",
+        "description": "Vytvářím moduly přesně podle vašich potřeb"
+      },
+      "integration": {
+        "title": "Systémová integrace",
+        "description": "Propojujeme Odoo s vašimi stávajícími systémy"
+      },
+      "support": {
+        "title": "Technická podpora",
+        "description": "Rychlá a profesionální podpora kdykoliv potřebujete"
+      },
+      "optimization": {
+        "title": "Optimalizace výkonu",
+        "description": "Zvyšujeme rychlost a efektivitu vašeho systému"
+      }
+    }
+  },
+  "3cx": {
+    "hero": {
+      "title": "3CX Integrace",
+      "subtitle": "Bezproblémová integrace telefonie, videa a chatu s Odoo"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Náš Příběh",
+      "title": {
+        "start": "Jsme",
+        "highlight": "FL1"
+      },
+      "subtitle": "Transformujeme firmy inovativními Odoo řešeními a špičkovým webovým vývojem",
+      "description": "Od roku 2015 pomáháme firmám růst prostřednictvím expertních Odoo implementací, bezproblémových integrací a moderních webových zkušeností.",
+      "trust": {
+        "years": "Let",
+        "projects": "Projektů",
+        "satisfaction": "Spokojenost"
+      },
+      "cta": {
+        "services": "Objevte Naše Služby",
+        "contact": "Kontaktujte Nás"
+      }
+    },
+    "story": {
+      "title": {
+        "start": "Naše",
+        "highlight": "Cesta"
+      },
+      "subtitle": "Od malého týmu s velkými sny k vašemu důvěryhodnému technologickému partnerovi",
+      "milestone1": {
+        "title": "Začátek",
+        "description": "Založeno nadšeným týmem italských vývojářů s vizí zpřístupnit Odoo firmám všech velikostí."
+      },
+      "milestone2": {
+        "title": "Odoo Gold Partner",
+        "description": "Dosažení statusu Odoo Gold Partner, uznávající naši odbornost a závazek k dokonalosti v Odoo implementaci."
+      },
+      "milestone3": {
+        "title": "Rozšíření Týmu",
+        "description": "Rozrostli jsme náš tým na 10+ specializovaných profesionálů, rozšířili služby o integraci 3CX a webový vývoj."
+      },
+      "milestone4": {
+        "title": "Lídr v Inovacích",
+        "description": "Dosáhli jsme 50+ úspěšných projektů a 1000+ stažení našeho 3CX modulu, stali jsme se důvěryhodným jménem v odvětví."
+      }
+    },
+    "values": {
+      "title": {
+        "start": "Naše",
+        "highlight": "Hodnoty"
+      },
+      "subtitle": "Principy, které řídí vše, co děláme",
+      "innovation": {
+        "title": "Inovace",
+        "description": "Neustále zkoumáme nové technologie a metodologie, abychom poskytovali špičková řešení, která vás udržují napřed."
+      },
+      "quality": {
+        "title": "Kvalita",
+        "description": "Každý řádek kódu, každá implementace, každá interakce je vytvořena s pečlivou pozorností k detailu a dokonalosti."
+      },
+      "transparency": {
+        "title": "Transparentnost",
+        "description": "Jasná komunikace, čestné ceny a otevřená spolupráce. Vždy víte, co se děje s vaším projektem."
+      },
+      "customer": {
+        "title": "Zaměření na Zákazníka",
+        "description": "Váš úspěch je náš úspěch. Nejsme spokojeni, dokud nejste nadšeni výsledky, které dodáváme."
+      }
+    },
+    "team": {
+      "title": {
+        "start": "Poznejte Náš",
+        "highlight": "Tým"
+      },
+      "subtitle": "Talentovaní lidé, kteří to všechno umožňují",
+      "member1": {
+        "name": "Roberto Cotti",
+        "role": "Zakladatel & Full Stack Developer",
+        "description": "10+ let ve vývoji Odoo. Nadšený pro vytváření řešení, která transformují firmy."
+      },
+      "member2": {
+        "name": "Eduard Bianchi",
+        "role": "Technický Vedoucí",
+        "description": "Expert na integraci systémů a architekturu. Zajišťuje hladký průběh každého projektu."
+      },
+      "member3": {
+        "name": "Daniel De Vecchi",
+        "role": "Spoluzakladatel & Frontend Specialista",
+        "description": "Vytváří krásné, výkonné webové zkušenosti s React a Next.js."
+      },
+      "member4": {
+        "name": "Asia Conti",
+        "role": "Customer Success",
+        "description": "Zajišťuje, že klienti získají maximální hodnotu z jejich Odoo implementace."
+      }
+    },
+    "numbers": {
+      "title": {
+        "start": "Úspěch v",
+        "highlight": "Číslech"
+      },
+      "subtitle": "Úspěchy, které mluví samy za sebe",
+      "projects": "Dokončených Projektů",
+      "years": "Let Zkušeností",
+      "downloads": "Stažení 3CX Modulu",
+      "satisfaction": "Spokojenost Klientů"
+    },
+    "partners": {
+      "title": {
+        "start": "Partneři a",
+        "highlight": "Certifikace"
+      },
+      "subtitle": "Důvěryhodní průmysloví lídři a certifikovaní profesionálové",
+      "odoo": "Odoo Gold Partner",
+      "3cx": "Certifikovaný 3CX",
+      "react": "React Experti",
+      "nextjs": "Next.js Specialisté",
+      "iso": "ISO Certifikováno",
+      "eu": "EU Partner"
+    },
+    "cta": {
+      "title": {
+        "start": "Připraveni Pracovat",
+        "highlight": "Společně"
+      },
+      "subtitle": "Pojďme vytvořit něco úžasného pro vaši firmu",
+      "contact": "Kontaktujte Nás",
+      "services": "Naše Služby"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Kontaktujte Nás",
+      "title": {
+        "start": "Mluvme o Vašem",
+        "highlight": "Projektu"
+      },
+      "subtitle": "Jsme tu, abychom vám pomohli přeměnit vaši obchodní vizi v realitu"
+    },
+    "form": {
+      "title": "Pošlete nám zprávu",
+      "subtitle": "Vyplňte formulář a my vám odpovíme do 24 hodin",
+      "fields": {
+        "name": "Celé Jméno",
+        "email": "Emailová Adresa",
+        "phone": "Telefonní Číslo",
+        "service": "Služba Zájmu",
+        "message": "Vaše Zpráva"
+      },
+      "placeholders": {
+        "name": "Jan Novák",
+        "email": "jan@firma.cz",
+        "phone": "+420 123 456 789",
+        "service": "Vyberte službu...",
+        "message": "Řekněte nám o vašem projektu nebo požadavcích..."
+      },
+      "services": {
+        "odoo": "Vývoj Odoo",
+        "website": "Vývoj Webových Stránek",
+        "consulting": "Konzultace a Podpora",
+        "other": "Další Služby"
+      },
+      "submit": "Odeslat Zprávu",
+      "success": "Děkujeme! Vaše zpráva byla odeslána.",
+      "error": "Něco se pokazilo. Zkuste to prosím znovu."
+    },
+    "info": {
+      "email": {
+        "label": "Email",
+        "value": "bo2@fl1.cz"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+420 775 113 732"
+      },
+      "location": {
+        "label": "Umístění",
+        "value": "Moskevská 1464/61, Vršovice, 101 00 Praha 10"
+      },
+      "hours": {
+        "label": "Pracovní Doba",
+        "value": "Po-Pá: 9:00 - 18:00"
+      }
+    }
+  },
+  "websiteDev": {
+    "hero": {
+      "badge": "Experti na Vývoj Webu",
+      "title": {
+        "start": "Vytváříme",
+        "highlight": "Moderní Webové Zkušenosti"
+      },
+      "subtitle": "Od landing pages po složité webové aplikace. Rychlé, krásné a optimalizované pro úspěch.",
+      "cta": {
+        "primary": "Začít Váš Projekt",
+        "secondary": "Zobrazit Portfolio"
+      },
+      "features": {
+        "fast": "Dodání za 2-4 Týdny",
+        "performance": "Lighthouse 90+",
+        "seo": "SEO Optimalizováno",
+        "transparent": "Transparentní Ceny"
+      }
+    },
+    "techStack": {
+      "title": {
+        "start": "Poháněno",
+        "highlight": "Moderními Technologiemi"
+      },
+      "subtitle": "Používáme nejlepší technologie pro vytváření rychlých, škálovatelných a udržovatelných aplikací"
+    },
+    "services": {
+      "title": {
+        "start": "Co",
+        "highlight": "Vytváříme"
+      },
+      "subtitle": "Komplexní služby vývoje webu pro každou potřebu",
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Vysoce konverzní landing pages navržené pro získávání leadů a zvyšování prodeje"
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Kompletní online obchody s platební integrací a správou inventáře"
+      },
+      "webapp": {
+        "title": "Webové Aplikace",
+        "description": "Vlastní SaaS platformy a webové aplikace postavené pro škálování"
+      },
+      "dashboard": {
+        "title": "Dashboardy",
+        "description": "Vizualizace dat a admin panely pro správu vašeho podnikání"
+      },
+      "maintenance": {
+        "title": "Údržba a Podpora",
+        "description": "Průběžná podpora, aktualizace a vylepšení vašich webových stránek"
+      }
+    },
+    "projects": {
+      "title": {
+        "start": "Vybrané",
+        "highlight": "Projekty"
+      },
+      "subtitle": "Příklady naší práce v různých odvětvích",
+      "project1": {
+        "title": "E-commerce Platforma",
+        "category": "Online Obchod",
+        "description": "Moderní e-commerce s 5000+ produkty a inventářem v reálném čase"
+      },
+      "project2": {
+        "title": "SaaS Dashboard",
+        "category": "Webová Aplikace",
+        "description": "Analytická platforma zpracovávající 1M+ událostí denně"
+      },
+      "project3": {
+        "title": "Firemní Web",
+        "category": "Landing Page",
+        "description": "Vícejazyčný firemní web s CMS integrací"
+      },
+      "project4": {
+        "title": "Rezervační Systém",
+        "category": "Webová Aplikace",
+        "description": "Rezervační platforma v reálném čase se synchronizací kalendáře"
+      }
+    },
+    "process": {
+      "title": {
+        "start": "Proces",
+        "highlight": "Vývoje"
+      },
+      "subtitle": "Od nápadu po spuštění ve 4 jednoduchých krocích",
+      "step1": {
+        "title": "Objevování & Plánování",
+        "description": "Analyzujeme vaše potřeby a vytvoříme podrobnou cestu k úspěchu"
+      },
+      "step2": {
+        "title": "Design & Prototyp",
+        "description": "Krásný UI/UX design, který konvertuje návštěvníky na zákazníky"
+      },
+      "step3": {
+        "title": "Vývoj & Testování",
+        "description": "Čistý kód, důkladné testování a optimalizace výkonu"
+      },
+      "step4": {
+        "title": "Spuštění & Podpora",
+        "description": "Hladké nasazení s průběžnou údržbou a aktualizacemi"
+      }
+    },
+    "features": {
+      "title": {
+        "start": "Proč Si Vybrat",
+        "highlight": "Nás"
+      },
+      "subtitle": "Co dělá náš přístup k vývoji jedinečným",
+      "fast": {
+        "title": "Rychlý Vývoj",
+        "description": "Spusťte svůj projekt za 2-4 týdny s naším zefektivněným procesem"
+      },
+      "performance": {
+        "title": "Špičkový Výkon",
+        "description": "Skóre Lighthouse 90+ zaručeno. Rychlé načítání, plynulé interakce"
+      },
+      "seo": {
+        "title": "SEO First",
+        "description": "Vestavěná SEO optimalizace pro maximální viditelnost ve vyhledávačích"
+      },
+      "pricing": {
+        "title": "Transparentní Ceny",
+        "description": "Jasné, předem stanovené ceny bez skrytých poplatků nebo překvapení"
+      }
+    },
+    "pricing": {
+      "title": {
+        "start": "Jednoduché",
+        "highlight": "Ceny"
+      },
+      "subtitle": "Kvalitní vývoj webu od €1.500",
+      "from": "Od",
+      "description": "Kompletní balíček vývoje webu včetně designu, vývoje, testování a nasazení",
+      "features": {
+        "feature1": "Vlastní responzivní design",
+        "feature2": "SEO optimalizace",
+        "feature3": "Optimalizace výkonu",
+        "feature4": "CMS integrace",
+        "feature5": "1 měsíc bezplatná podpora",
+        "feature6": "SSL certifikát zahrnut"
+      },
+      "cta": "Získat Cenovou Nabídku",
+      "note": "Konečná cena závisí na složitosti a požadavcích projektu"
+    },
+    "finalCta": {
+      "title": {
+        "start": "Připraveni Vytvořit",
+        "highlight": "Něco Úžasného"
+      },
+      "subtitle": "Transformujeme vaši vizi v úžasnou webovou zkušenost",
+      "cta": "Začněte Svůj Projekt Dnes"
+    }
+  },
+  "cta": {
+    "headline": "Přestaňte Žonglovat s Nástroji.",
+    "headlineHighlight": "Začněte Růst.",
+    "subtitle": "Připojte se k více než 50 společnostem, které nahradily roztroušené tabulky a odpojené aplikace jednou inteligentní platformou. Získejte přehled v reálném čase, automatizované pracovní postupy a svobodu soustředit se na to, co záleží.",
+    "benefits": {
+      "realTimeInsights": "Přehledy v reálném čase v celé vaší firmě",
+      "automatedWorkflows": "Automatizované pracovní postupy, které šetří 20+ hodin týdně",
+      "seamlessIntegration": "Bezproblémová integrace se stávajícími nástroji",
+      "scalableGrowth": "Škálovatelný růst bez technických potíží"
+    },
+    "buttons": {
+      "consultation": "Získat Bezplatnou Konzultaci"
+    },
+    "trustIndicators": {
+      "certifiedLabel": "Certifikováno",
+      "certifiedValue": "Odoo Gold Partner",
+      "successfullyLabel": "Úspěšně",
+      "successfullyValue": "50+ Implementací"
+    }
+  },
+  "3cx": {
+    "hero": {
+      "badge": "1093+ Stažení na Odoo Store",
+      "title": {
+        "highlight1": "3CX",
+        "middle": "Integrace s",
+        "highlight2": "Odoo"
+      },
+      "subtitle": {
+        "start": "Propojte svůj telefonní systém s",
+        "highlight": "Odoo CRM",
+        "end": "a zefektivněte firemní komunikaci"
+      },
+      "features": {
+        "unifiedComms": "Jednotná Komunikace",
+        "mobileApps": "Mobilní Aplikace",
+        "videoConf": "Videokonference",
+        "integration": "Integrace Odoo"
+      },
+      "pricing": {
+        "label": "Instalační Balíček",
+        "price": "€400",
+        "description": "Jednorázový instalační poplatek"
+      },
+      "cta": "Požádat o Instalaci",
+      "trust": {
+        "downloads": "1093+ stažení",
+        "certified": "3CX Certifikovaní",
+        "support": "Italská Podpora"
+      }
+    },
+    "included": {
+      "title": {
+        "start": "Co Je",
+        "highlight": "Zahrnuto"
+      },
+      "subtitle": "Kompletní integrace 3CX s výkonnými funkcemi",
+      "lookup": {
+        "title": "Automatické Vyhledávání Hovorů",
+        "description": "Okamžitě identifikujte příchozí hovory dotazováním databáze Odoo na leady a kontakty"
+      },
+      "realtime": {
+        "title": "Dotaz Databáze v Reálném Čase",
+        "description": "Dotazujte databázi Odoo v reálném čase při každém příchozím hovoru pro aktuální informace o zákaznících"
+      },
+      "contacts": {
+        "title": "Zobrazení Leadů a Kontaktů",
+        "description": "Zobrazte kompletní detaily zákazníka včetně jména, společnosti a historie prodeje před odpovědí"
+      },
+      "multichannel": {
+        "title": "Multi-Kanálová Integrace",
+        "description": "Bezproblémová integrace telefonie, videokonferencí a chatu s Odoo"
+      },
+      "configuration": {
+        "title": "Snadná Konfigurace",
+        "description": "Jednoduché nastavení přes systémové parametry Odoo s průvodcem instalací"
+      },
+      "api": {
+        "title": "API Autentizace",
+        "description": "Zabezpečená autentizace API klíčem pro spolehlivou komunikaci mezi 3CX a Odoo"
+      }
+    },
+    "howItWorks": {
+      "title": {
+        "start": "Jak To",
+        "highlight": "Funguje"
+      },
+      "subtitle": "Jednoduchý 4-krokový proces pro bezproblémovou integraci",
+      "step1": {
+        "title": "Příchozí Hovor",
+        "description": "3CX zachytí příchozí hovor a zaznamená číslo volajícího"
+      },
+      "step2": {
+        "title": "Dotaz Databáze",
+        "description": "Systém automaticky dotazuje databázi Odoo na odpovídající leady a kontakty"
+      },
+      "step3": {
+        "title": "Zobrazení Info",
+        "description": "Informace o zákazníkovi se okamžitě zobrazí na obrazovce s kompletními detaily"
+      },
+      "step4": {
+        "title": "Lepší Služba",
+        "description": "Odpovídejte na hovory s přesnou znalostí, kdo volá a jeho kompletní historie"
+      }
+    },
+    "whyChoose": {
+      "title": {
+        "start": "Proč Vybrat",
+        "highlight": "FL1"
+      },
+      "subtitle": "Důvěryhodná volba pro integraci 3CX s Odoo",
+      "trusted": {
+        "title": "1093+ Stažení",
+        "description": "Důvěryhodní podnikatelé po celém světě na Odoo Apps Store"
+      },
+      "allVersions": {
+        "title": "Všechny Verze Odoo",
+        "description": "Kompatibilní se všemi verzemi Odoo včetně nejnovější v17"
+      },
+      "quickSetup": {
+        "title": "Rychlá Instalace",
+        "description": "Rychlý proces nastavení s okamžitými výsledky a minimálním výpadkem"
+      },
+      "italianSupport": {
+        "title": "Italská Podpora",
+        "description": "Specializovaný tým italsky mluvící podpory připraven pomoci"
+      }
+    }
+  }
+}
