@@ -4,6 +4,7 @@
       "home": "Home",
       "services": "Servizi",
       "odoo-dev": "Sviluppo Odoo",
+      "superchat-integration": "Integrazione SuperChat",
       "3cx": "Integrazione 3CX",
       "website-dev": "Sviluppo Siti Web",
       "about": "Chi Siamo",
@@ -731,6 +732,303 @@
         "title": "Supporto Italiano",
         "description": "Team di supporto in italiano dedicato pronto ad aiutarti"
       }
+    }
+  },
+  "superChat": {
+    "hero": {
+      "badge": "💬 Soluzione di Messaggistica Unificata",
+      "title": {
+        "start": "Integrazione",
+        "highlight": "SuperChat",
+        "end": "con Odoo"
+      },
+      "subtitle": "Gestisci tutte le conversazioni dei clienti da WhatsApp, Instagram, Facebook e altro in un'unica piattaforma integrata con Odoo CRM",
+      "features": {
+        "whatsapp": "WhatsApp Business",
+        "instagram": "Instagram Direct",
+        "multiChannel": "6+ Canali",
+        "automation": "Automazione AI"
+      },
+      "cta": {
+        "primary": "Richiedi Demo",
+        "secondary": "Vedi Prezzi"
+      },
+      "trust": {
+        "channels": "6+ canali supportati",
+        "certified": "Partner Certificato",
+        "response": "Risposta < 2 min"
+      }
+    },
+    "whatIs": {
+      "title": {
+        "start": "Cos'è",
+        "highlight": "SuperChat"
+      },
+      "subtitle": "La piattaforma di messaggistica aziendale che unifica tutte le tue conversazioni con i clienti",
+      "description": "SuperChat è una soluzione di messaggistica unificata che collega tutti i tuoi canali di comunicazione (WhatsApp, Instagram, Facebook Messenger, Email, e altro) in un'unica inbox. Integrato con Odoo, ottieni una visione completa delle interazioni con i clienti e flussi di lavoro automatizzati.",
+      "stats": {
+        "openRate": {
+          "value": "90%",
+          "label": "Tasso di Apertura Messaggi"
+        },
+        "automated": {
+          "value": "80%",
+          "label": "Richieste Automatizzate"
+        },
+        "integrations": {
+          "value": "6000+",
+          "label": "Integrazioni Disponibili"
+        }
+      }
+    },
+    "benefits": {
+      "title": {
+        "start": "Perché Integrare",
+        "highlight": "SuperChat con Odoo"
+      },
+      "subtitle": "Potenzia la tua comunicazione con i clienti e semplifica i flussi di lavoro",
+      "unified": {
+        "title": "Inbox Unificata",
+        "description": "Gestisci tutti i messaggi da WhatsApp, Instagram, Facebook, Email e altro in un unico posto"
+      },
+      "automation": {
+        "title": "Automazione Intelligente",
+        "description": "Automatizza risposte, assegnazioni e follow-up con AI e chatbot potenti"
+      },
+      "crmSync": {
+        "title": "Sincronizzazione CRM",
+        "description": "Sincronizzazione bidirezionale automatica tra conversazioni SuperChat e contatti Odoo"
+      },
+      "teamwork": {
+        "title": "Collaborazione Team",
+        "description": "Assegna conversazioni, lascia note interne e collabora senza problemi con il tuo team"
+      },
+      "analytics": {
+        "title": "Analytics e Reporting",
+        "description": "Monitora tempi di risposta, soddisfazione clienti e performance del team in tempo reale"
+      },
+      "mobile": {
+        "title": "App Mobile",
+        "description": "Rimani connesso e rispondi ai clienti ovunque tu sia con app iOS e Android"
+      }
+    },
+    "channels": {
+      "title": {
+        "start": "Canali",
+        "highlight": "Supportati"
+      },
+      "subtitle": "Connetti tutti i tuoi canali di comunicazione preferiti",
+      "whatsapp": {
+        "name": "WhatsApp Business",
+        "description": "API ufficiale WhatsApp Business per messaggistica affidabile su larga scala"
+      },
+      "instagram": {
+        "name": "Instagram Direct",
+        "description": "Gestisci messaggi diretti e commenti da Instagram"
+      },
+      "facebook": {
+        "name": "Facebook Messenger",
+        "description": "Conversazioni Messenger integrate con la tua pagina Facebook"
+      },
+      "email": {
+        "name": "Email",
+        "description": "Gestione email tradizionale nell'inbox unificata"
+      },
+      "telegram": {
+        "name": "Telegram",
+        "description": "Supporto per chat e bot Telegram"
+      },
+      "livechat": {
+        "name": "Live Chat",
+        "description": "Widget chat incorporabile per il tuo sito web"
+      }
+    },
+    "process": {
+      "title": {
+        "start": "Come",
+        "highlight": "Funziona"
+      },
+      "subtitle": "Dall'installazione alla automazione in 5 semplici step",
+      "step1": {
+        "step": "Step 1",
+        "title": "Connetti Canali",
+        "description": "Collega WhatsApp, Instagram, Facebook e altri canali di messaggistica a SuperChat"
+      },
+      "step2": {
+        "step": "Step 2",
+        "title": "Integra con Odoo",
+        "description": "Configuriamo l'integrazione bidirezionale tra SuperChat e il tuo Odoo CRM"
+      },
+      "step3": {
+        "step": "Step 3",
+        "title": "Configura Automazioni",
+        "description": "Impostiamo chatbot, risposte automatiche e regole di assegnazione"
+      },
+      "step4": {
+        "step": "Step 4",
+        "title": "Forma il Team",
+        "description": "Formiamo il tuo team sull'uso efficace di SuperChat e le best practice"
+      },
+      "step5": {
+        "step": "Step 5",
+        "title": "Go Live",
+        "description": "Lanciamo il sistema e monitoriamo le performance con supporto continuo"
+      }
+    },
+    "useCases": {
+      "title": {
+        "start": "Casi d'Uso",
+        "highlight": "Popolari"
+      },
+      "subtitle": "Scopri come le aziende usano SuperChat + Odoo",
+      "ecommerce": {
+        "title": "E-commerce",
+        "category": "Retail",
+        "description": "Gestisci richieste prodotti, tracciamento ordini e supporto clienti via WhatsApp integrato con ordini Odoo",
+        "features": [
+          "Notifiche ordini automatiche via WhatsApp",
+          "Recupero carrelli abbandonati",
+          "Raccomandazioni prodotti con AI",
+          "Aggiornamenti spedizione in tempo reale"
+        ]
+      },
+      "service": {
+        "title": "Business di Servizi",
+        "category": "Servizi",
+        "description": "Automatizza prenotazioni appuntamenti, conferme e promemoria integrati con il calendario Odoo",
+        "features": [
+          "Prenotazione appuntamenti via chat",
+          "Promemoria automatici",
+          "Conferme servizio",
+          "Raccolta feedback post-servizio"
+        ]
+      },
+      "b2b": {
+        "title": "Vendite B2B",
+        "category": "Vendite",
+        "description": "Gestisci lead, richieste e follow-up commerciali con sincronizzazione completa CRM",
+        "features": [
+          "Qualificazione lead automatica",
+          "Tracciamento pipeline integrato",
+          "Quote e fatture via chat",
+          "Notifiche team vendite"
+        ]
+      },
+      "support": {
+        "title": "Supporto Clienti",
+        "category": "Supporto",
+        "description": "Fornisci supporto multi-canale con gestione ticket integrata nel sistema helpdesk Odoo",
+        "features": [
+          "Creazione ticket automatica",
+          "Base conoscenza con AI",
+          "Escalation priorità",
+          "Sondaggi soddisfazione"
+        ]
+      }
+    },
+    "pricing": {
+      "title": {
+        "start": "Pacchetti",
+        "highlight": "Integrazione"
+      },
+      "subtitle": "Scegli il pacchetto perfetto per le tue esigenze",
+      "starter": {
+        "name": "Starter",
+        "price": "€800",
+        "badge": "Per Piccole Imprese",
+        "ideal": "Ideale per piccole imprese con 1-2 canali",
+        "setup": "Setup una tantum",
+        "cta": "Scegli Starter",
+        "features": {
+          "channels": "2 canali di messaggistica (es. WhatsApp + Instagram)",
+          "integration": "Integrazione base con Odoo CRM",
+          "users": "Fino a 3 utenti",
+          "automation": "Automazioni base (risposte automatiche)",
+          "support": "5 ore setup e formazione",
+          "maintenance": "1 mese supporto gratuito"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "price": "€1.500",
+        "badge": "⭐ Più Popolare",
+        "ideal": "Ideale per aziende in crescita con più canali",
+        "setup": "Setup una tantum",
+        "cta": "Scegli Business",
+        "features": {
+          "everything": "Tutto dello Starter +",
+          "allChannels": "Tutti i canali (WhatsApp, Instagram, Facebook, Email, etc.)",
+          "unlimitedUsers": "Utenti illimitati",
+          "advancedAutomation": "Automazioni avanzate e chatbot AI",
+          "fullSync": "Sincronizzazione CRM completa (contatti, lead, opportunità)",
+          "analytics": "Dashboard analytics avanzati",
+          "training": "10 ore formazione team",
+          "extendedSupport": "3 mesi supporto prioritario"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Personalizzato",
+        "badge": "Soluzione Completa",
+        "ideal": "Per grandi organizzazioni con esigenze complesse",
+        "setup": "Contattaci",
+        "cta": "Contattaci",
+        "features": {
+          "everything": "Tutto del Business +",
+          "customWorkflows": "Flussi di lavoro personalizzati",
+          "advancedIntegrations": "Integrazioni personalizzate (ERP, E-commerce, etc.)",
+          "dedicatedManager": "Account manager dedicato",
+          "sla": "SLA garantito con tempi risposta",
+          "whitelabel": "Opzioni white-label disponibili",
+          "training": "Formazione illimitata",
+          "support": "Supporto 24/7 dedicato"
+        }
+      }
+    },
+    "technical": {
+      "title": {
+        "start": "Caratteristiche",
+        "highlight": "Tecniche"
+      },
+      "subtitle": "Integrazione potente e sicura costruita per scalare",
+      "realtime": {
+        "title": "Sincronizzazione Real-Time",
+        "description": "Sincronizzazione bidirezionale istantanea tra conversazioni e dati Odoo"
+      },
+      "api": {
+        "title": "API RESTful",
+        "description": "Integrazione robusta via API con autenticazione sicura e rate limiting"
+      },
+      "webhooks": {
+        "title": "Webhook Events",
+        "description": "Ricevi notifiche real-time per nuovi messaggi, aggiornamenti stato e altro"
+      },
+      "security": {
+        "title": "Sicurezza Enterprise",
+        "description": "Crittografia end-to-end, conformità GDPR e hosting sicuro"
+      },
+      "scalable": {
+        "title": "Architettura Scalabile",
+        "description": "Gestisci migliaia di conversazioni simultanee senza degradazione performance"
+      },
+      "customization": {
+        "title": "Altamente Personalizzabile",
+        "description": "Adatta flussi di lavoro, campi e automazioni alle tue esigenze esatte"
+      }
+    },
+    "finalCta": {
+      "title": {
+        "start": "Pronto a Unificare la Tua",
+        "highlight": "Comunicazione Clienti"
+      },
+      "subtitle": "Unisciti a centinaia di aziende che hanno trasformato il supporto clienti con SuperChat + Odoo",
+      "cta": "Richiedi Demo Gratuita",
+      "trust": {
+        "demo": "Demo gratuita",
+        "noCommitment": "Nessun impegno",
+        "response": "Risposta in 24h"
+      },
+      "alternative": "Oppure chiamaci:"
     }
   }
 }

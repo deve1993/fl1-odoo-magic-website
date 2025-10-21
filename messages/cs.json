@@ -4,6 +4,7 @@
       "home": "Domů",
       "services": "Služby",
       "odoo-dev": "Odoo Vývoj",
+      "superchat-integration": "Integrace SuperChat",
       "3cx": "3CX Integrace",
       "website-dev": "Vývoj webových stránek",
       "about": "O nás",
@@ -731,6 +732,303 @@
         "title": "Italská Podpora",
         "description": "Specializovaný tým italsky mluvící podpory připraven pomoci"
       }
+    }
+  },
+  "superChat": {
+    "hero": {
+      "badge": "💬 Řešení Jednotné Komunikace",
+      "title": {
+        "start": "Integrace",
+        "highlight": "SuperChat",
+        "end": "s Odoo"
+      },
+      "subtitle": "Spravujte všechny zákaznické konverzace z WhatsApp, Instagram, Facebook a dalších v jedné platformě integrované s Odoo CRM",
+      "features": {
+        "whatsapp": "WhatsApp Business",
+        "instagram": "Instagram Direct",
+        "multiChannel": "6+ Kanálů",
+        "automation": "AI Automatizace"
+      },
+      "cta": {
+        "primary": "Požádat o Demo",
+        "secondary": "Zobrazit Ceny"
+      },
+      "trust": {
+        "channels": "6+ podporovaných kanálů",
+        "certified": "Certifikovaný Partner",
+        "response": "Odpověď < 2 min"
+      }
+    },
+    "whatIs": {
+      "title": {
+        "start": "Co je",
+        "highlight": "SuperChat"
+      },
+      "subtitle": "Podniková komunikační platforma, která sjednocuje všechny vaše zákaznické konverzace",
+      "description": "SuperChat je řešení jednotné komunikace, které spojuje všechny vaše komunikační kanály (WhatsApp, Instagram, Facebook Messenger, Email a další) do jedné schránky. Integrováno s Odoo získáte kompletní přehled o interakcích se zákazníky a automatizované pracovní postupy.",
+      "stats": {
+        "openRate": {
+          "value": "90%",
+          "label": "Míra Otevření Zpráv"
+        },
+        "automated": {
+          "value": "80%",
+          "label": "Automatizované Požadavky"
+        },
+        "integrations": {
+          "value": "6000+",
+          "label": "Dostupných Integrací"
+        }
+      }
+    },
+    "benefits": {
+      "title": {
+        "start": "Proč Integrovat",
+        "highlight": "SuperChat s Odoo"
+      },
+      "subtitle": "Posílejte svou zákaznickou komunikaci a zefektivněte pracovní postupy",
+      "unified": {
+        "title": "Jednotná Schránka",
+        "description": "Spravujte všechny zprávy z WhatsApp, Instagram, Facebook, Email a dalších na jednom místě"
+      },
+      "automation": {
+        "title": "Inteligentní Automatizace",
+        "description": "Automatizujte odpovědi, přiřazení a sledování s AI a výkonnými chatboty"
+      },
+      "crmSync": {
+        "title": "Synchronizace CRM",
+        "description": "Automatická obousměrná synchronizace mezi konverzacemi SuperChat a kontakty Odoo"
+      },
+      "teamwork": {
+        "title": "Týmová Spolupráce",
+        "description": "Přiřazujte konverzace, zanechávejte interní poznámky a spolupracujte bez problémů s týmem"
+      },
+      "analytics": {
+        "title": "Analytika a Reportování",
+        "description": "Sledujte doby odpovědí, spokojenost zákazníků a výkon týmu v reálném čase"
+      },
+      "mobile": {
+        "title": "Mobilní Aplikace",
+        "description": "Zůstaňte připojeni a odpovídejte zákazníkům kdekoli s iOS a Android aplikacemi"
+      }
+    },
+    "channels": {
+      "title": {
+        "start": "Podporované",
+        "highlight": "Kanály"
+      },
+      "subtitle": "Připojte všechny své oblíbené komunikační kanály",
+      "whatsapp": {
+        "name": "WhatsApp Business",
+        "description": "Oficiální WhatsApp Business API pro spolehlivou komunikaci ve velkém měřítku"
+      },
+      "instagram": {
+        "name": "Instagram Direct",
+        "description": "Spravujte přímé zprávy a komentáře z Instagramu"
+      },
+      "facebook": {
+        "name": "Facebook Messenger",
+        "description": "Konverzace Messenger integrované s vaší Facebook stránkou"
+      },
+      "email": {
+        "name": "Email",
+        "description": "Tradiční emailová správa v jednotné schránce"
+      },
+      "telegram": {
+        "name": "Telegram",
+        "description": "Podpora pro Telegram chat a boty"
+      },
+      "livechat": {
+        "name": "Live Chat",
+        "description": "Integrovatelný chatový widget pro váš web"
+      }
+    },
+    "process": {
+      "title": {
+        "start": "Jak To",
+        "highlight": "Funguje"
+      },
+      "subtitle": "Od instalace k automatizaci v 5 jednoduchých krocích",
+      "step1": {
+        "step": "Krok 1",
+        "title": "Připojte Kanály",
+        "description": "Připojte WhatsApp, Instagram, Facebook a další komunikační kanály k SuperChat"
+      },
+      "step2": {
+        "step": "Krok 2",
+        "title": "Integrujte s Odoo",
+        "description": "Nakonfigurujeme obousměrnou integraci mezi SuperChat a vaším Odoo CRM"
+      },
+      "step3": {
+        "step": "Krok 3",
+        "title": "Nastavte Automatizace",
+        "description": "Nastavíme chatboty, automatické odpovědi a pravidla přiřazení"
+      },
+      "step4": {
+        "step": "Krok 4",
+        "title": "Vyškolte Tým",
+        "description": "Vyškolíme váš tým v efektivním používání SuperChat a osvědčených postupech"
+      },
+      "step5": {
+        "step": "Krok 5",
+        "title": "Spusťte",
+        "description": "Spustíme systém a monitorujeme výkon s průběžnou podporou"
+      }
+    },
+    "useCases": {
+      "title": {
+        "start": "Populární",
+        "highlight": "Případy Použití"
+      },
+      "subtitle": "Objevte, jak firmy používají SuperChat + Odoo",
+      "ecommerce": {
+        "title": "E-commerce",
+        "category": "Maloobchod",
+        "description": "Spravujte produktové dotazy, sledování objednávek a zákaznickou podporu přes WhatsApp integrovaný s Odoo objednávkami",
+        "features": [
+          "Automatické objednávkové notifikace přes WhatsApp",
+          "Obnova opuštěných košíků",
+          "AI produktové doporučení",
+          "Aktualizace zásilky v reálném čase"
+        ]
+      },
+      "service": {
+        "title": "Servisní Podnik",
+        "category": "Služby",
+        "description": "Automatizujte rezervace schůzek, potvrzení a připomínky integrované s Odoo kalendářem",
+        "features": [
+          "Rezervace schůzek přes chat",
+          "Automatické připomínky",
+          "Potvrzení služeb",
+          "Sběr zpětné vazby po službě"
+        ]
+      },
+      "b2b": {
+        "title": "B2B Prodej",
+        "category": "Prodej",
+        "description": "Spravujte leady, dotazy a obchodní sledování s plnou CRM synchronizací",
+        "features": [
+          "Automatická kvalifikace leadů",
+          "Integrované sledování pipeline",
+          "Nabídky a faktury přes chat",
+          "Notifikace prodejního týmu"
+        ]
+      },
+      "support": {
+        "title": "Zákaznická Podpora",
+        "category": "Podpora",
+        "description": "Poskytujte vícekanálovou podporu se správou tiketů integrovanou do Odoo helpdesk systému",
+        "features": [
+          "Automatické vytváření tiketů",
+          "AI znalostní báze",
+          "Eskalace priorit",
+          "Průzkumy spokojenosti"
+        ]
+      }
+    },
+    "pricing": {
+      "title": {
+        "start": "Integrační",
+        "highlight": "Balíčky"
+      },
+      "subtitle": "Vyberte si perfektní balíček pro vaše potřeby",
+      "starter": {
+        "name": "Starter",
+        "price": "€800",
+        "badge": "Pro Malé Firmy",
+        "ideal": "Ideální pro malé firmy s 1-2 kanály",
+        "setup": "Jednorázové nastavení",
+        "cta": "Vybrat Starter",
+        "features": {
+          "channels": "2 komunikační kanály (např. WhatsApp + Instagram)",
+          "integration": "Základní integrace s Odoo CRM",
+          "users": "Až 3 uživatelé",
+          "automation": "Základní automatizace (automatické odpovědi)",
+          "support": "5 hodin nastavení a školení",
+          "maintenance": "1 měsíc bezplatná podpora"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "price": "€1.500",
+        "badge": "⭐ Nejpopulárnější",
+        "ideal": "Ideální pro rostoucí firmy s více kanály",
+        "setup": "Jednorázové nastavení",
+        "cta": "Vybrat Business",
+        "features": {
+          "everything": "Vše ze Starteru +",
+          "allChannels": "Všechny kanály (WhatsApp, Instagram, Facebook, Email, atd.)",
+          "unlimitedUsers": "Neomezení uživatelé",
+          "advancedAutomation": "Pokročilé automatizace a AI chatboty",
+          "fullSync": "Plná synchronizace CRM (kontakty, leady, příležitosti)",
+          "analytics": "Pokročilé analytické dashboardy",
+          "training": "10 hodin týmového školení",
+          "extendedSupport": "3 měsíce prioritní podpory"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Vlastní",
+        "badge": "Kompletní Řešení",
+        "ideal": "Pro velké organizace se složitými požadavky",
+        "setup": "Kontaktujte nás",
+        "cta": "Kontaktujte Nás",
+        "features": {
+          "everything": "Vše z Business +",
+          "customWorkflows": "Vlastní pracovní postupy",
+          "advancedIntegrations": "Vlastní integrace (ERP, E-commerce, atd.)",
+          "dedicatedManager": "Dedikovaný account manažer",
+          "sla": "Garantované SLA s dobami odpovědi",
+          "whitelabel": "Dostupné white-label možnosti",
+          "training": "Neomezené školení",
+          "support": "Dedikovaná 24/7 podpora"
+        }
+      }
+    },
+    "technical": {
+      "title": {
+        "start": "Technické",
+        "highlight": "Funkce"
+      },
+      "subtitle": "Výkonná a bezpečná integrace postavená pro škálování",
+      "realtime": {
+        "title": "Real-Time Synchronizace",
+        "description": "Okamžitá obousměrná synchronizace mezi konverzacemi a Odoo daty"
+      },
+      "api": {
+        "title": "RESTful API",
+        "description": "Robustní integrace API s bezpečnou autentizací a rate limiting"
+      },
+      "webhooks": {
+        "title": "Webhook Events",
+        "description": "Přijímejte real-time notifikace pro nové zprávy, aktualizace stavu a další"
+      },
+      "security": {
+        "title": "Enterprise Zabezpečení",
+        "description": "End-to-end šifrování, GDPR compliance a bezpečný hosting"
+      },
+      "scalable": {
+        "title": "Škálovatelná Architektura",
+        "description": "Zpracujte tisíce současných konverzací bez degradace výkonu"
+      },
+      "customization": {
+        "title": "Vysoce Přizpůsobitelné",
+        "description": "Přizpůsobte pracovní postupy, pole a automatizace vašim přesným potřebám"
+      }
+    },
+    "finalCta": {
+      "title": {
+        "start": "Připraveni Sjednotit",
+        "highlight": "Zákaznickou Komunikaci"
+      },
+      "subtitle": "Připojte se ke stovkám firem, které transformovaly zákaznickou podporu s SuperChat + Odoo",
+      "cta": "Požádat o Bezplatnou Demo",
+      "trust": {
+        "demo": "Bezplatná demo",
+        "noCommitment": "Žádný závazek",
+        "response": "Odpověď do 24h"
+      },
+      "alternative": "Nebo nám zavolejte:"
     }
   }
 }

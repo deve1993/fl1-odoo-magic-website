@@ -4,6 +4,7 @@
       "home": "Home",
       "services": "Services",
       "odoo-dev": "Odoo Development",
+      "superchat-integration": "SuperChat Integration",
       "3cx": "3CX Integration",
       "website-dev": "Website Development",
       "about": "About",
@@ -730,6 +731,222 @@
       "italianSupport": {
         "title": "Italian Support",
         "description": "Dedicated Italian-speaking support team ready to help"
+      }
+    }
+  },
+  "superChat": {
+    "hero": {
+      "badge": "Unified Business Messaging",
+      "title": {
+        "start": "SuperChat + Odoo",
+        "highlight": "Integration"
+      },
+      "subtitle": "Centralize WhatsApp, Instagram, Facebook and all messaging channels directly in Odoo",
+      "features": {
+        "whatsapp": "WhatsApp Business API",
+        "ai": "AI Chatbot 24/7",
+        "unified": "Unified Inbox",
+        "gdpr": "GDPR Compliant"
+      },
+      "cta": {
+        "primary": "Request Demo",
+        "secondary": "View Packages"
+      }
+    },
+    "whatis": {
+      "title": {
+        "start": "What is",
+        "highlight": "SuperChat"
+      },
+      "description": "SuperChat is an AI-powered business messaging platform that centralizes all customer communications (WhatsApp, Instagram, Facebook, Email, SMS) into a single unified inbox, perfectly integrated with Odoo.",
+      "stats": {
+        "openrate": "WhatsApp Open Rate",
+        "automated": "Queries Automated by AI",
+        "integrations": "Available Integrations"
+      }
+    },
+    "benefits": {
+      "title": {
+        "start": "Integration",
+        "highlight": "Benefits"
+      },
+      "subtitle": "Transform your business communication with SuperChat + Odoo",
+      "unified": {
+        "title": "Unified Communications",
+        "description": "All messages from WhatsApp, Instagram, Facebook, Email and SMS directly in Odoo CRM"
+      },
+      "ai": {
+        "title": "AI Automation",
+        "description": "Intelligent chatbots that handle up to 80% of queries automatically with AI copilot support"
+      },
+      "journey": {
+        "title": "Complete Customer Journey",
+        "description": "From lead to post-sales in a single system with full conversation history"
+      },
+      "team": {
+        "title": "Team Collaboration",
+        "description": "Shared inbox with assignment, notes and real-time collaboration between team members"
+      },
+      "analytics": {
+        "title": "Analytics & Reports",
+        "description": "Unified metrics and detailed reports on all communication channels in Odoo"
+      },
+      "multichannel": {
+        "title": "Multi-Channel",
+        "description": "Manage WhatsApp, Instagram, Facebook, Email, Telegram and SMS from a single interface"
+      }
+    },
+    "channels": {
+      "title": {
+        "start": "Supported",
+        "highlight": "Channels"
+      },
+      "subtitle": "Connect all your communication channels to Odoo"
+    },
+    "process": {
+      "title": {
+        "start": "How It",
+        "highlight": "Works"
+      },
+      "subtitle": "From setup to go-live in 5 simple steps",
+      "step1": {
+        "title": "SuperChat Setup",
+        "description": "We configure your SuperChat account and connect all desired channels (WhatsApp, Instagram, etc.)"
+      },
+      "step2": {
+        "title": "API Integration",
+        "description": "We connect SuperChat to Odoo via API/Zapier for bidirectional synchronization"
+      },
+      "step3": {
+        "title": "Chatbot Configuration",
+        "description": "We set up AI automations, templates and automated responses for your business"
+      },
+      "step4": {
+        "title": "Team Training",
+        "description": "Complete training for your team on using SuperChat integrated with Odoo"
+      },
+      "step5": {
+        "title": "Go Live & Monitoring",
+        "description": "Launch and continuous monitoring with optimization and dedicated support"
+      }
+    },
+    "usecases": {
+      "title": {
+        "start": "Real",
+        "highlight": "Use Cases"
+      },
+      "subtitle": "See how SuperChat + Odoo can transform your business",
+      "ecommerce": {
+        "title": "E-commerce",
+        "category": "Online Store",
+        "description": "Automated customer support and orders directly via WhatsApp",
+        "feature1": "WhatsApp order tracking",
+        "feature2": "AI chatbot for FAQs",
+        "feature3": "Abandoned cart recovery"
+      },
+      "service": {
+        "title": "Service Business",
+        "category": "Appointments",
+        "description": "Automatic appointment booking and reminders",
+        "feature1": "Automated bookings via chatbot",
+        "feature2": "WhatsApp reminders",
+        "feature3": "Customer feedback collection"
+      },
+      "b2b": {
+        "title": "B2B Sales",
+        "category": "Lead Management",
+        "description": "Lead management and sales communication",
+        "feature1": "Leads from WhatsApp to Odoo CRM",
+        "feature2": "Sales team collaboration",
+        "feature3": "Automated follow-ups"
+      },
+      "support": {
+        "title": "Customer Support",
+        "category": "Helpdesk",
+        "description": "Multi-channel support tickets in Odoo",
+        "feature1": "Unified support inbox",
+        "feature2": "AI auto-responses",
+        "feature3": "SLA tracking"
+      }
+    },
+    "pricing": {
+      "title": {
+        "start": "Choose Your",
+        "highlight": "Package"
+      },
+      "subtitle": "Transparent pricing with everything you need to get started",
+      "starter": {
+        "name": "Starter Package",
+        "price": "€800",
+        "badge": "For Small Business",
+        "ideal": "Ideal for startups and small businesses",
+        "features": {
+          "channel": "1 Channel (WhatsApp or Instagram)",
+          "setup": "Basic SuperChat + Odoo setup",
+          "support": "10 hours technical support",
+          "training": "Basic training (2 sessions)",
+          "updates": "3 months support"
+        },
+        "cta": "Choose Starter"
+      },
+      "business": {
+        "name": "Business Package",
+        "price": "€1,500",
+        "badge": "⭐ Recommended",
+        "ideal": "Ideal for growing businesses",
+        "features": {
+          "everything": "Everything in Starter +",
+          "channels": "Multi-channel (WhatsApp, IG, FB, Email)",
+          "ai": "AI Chatbot with automations",
+          "support": "30 hours technical support",
+          "integrations": "2 custom integrations",
+          "priority": "Priority support (<4h)",
+          "analytics": "Advanced analytics dashboard",
+          "updates": "6 months support"
+        },
+        "cta": "Choose Business"
+      },
+      "enterprise": {
+        "name": "Enterprise Package",
+        "price": "Custom",
+        "badge": "Enterprise",
+        "ideal": "Ideal for large organizations",
+        "features": {
+          "everything": "Everything in Business +",
+          "custom": "Unlimited custom automations",
+          "dedicated": "Dedicated account manager",
+          "training": "Advanced team training",
+          "sla": "SLA guarantee",
+          "api": "Custom API integrations",
+          "consulting": "Strategic consulting",
+          "priority": "Priority support 24/7"
+        },
+        "cta": "Contact Us"
+      }
+    },
+    "technical": {
+      "title": {
+        "start": "Technical",
+        "highlight": "Features"
+      },
+      "gdpr": "100% GDPR Compliant",
+      "api": "REST API",
+      "webhook": "Real-time Webhooks",
+      "templates": "Pre-built Templates",
+      "analytics": "Analytics Dashboard",
+      "mobile": "iOS & Android App"
+    },
+    "cta": {
+      "title": {
+        "start": "Ready to",
+        "highlight": "Get Started"
+      },
+      "subtitle": "Centralize all your business communications in Odoo with SuperChat",
+      "button": "Request Free Consultation",
+      "trust": {
+        "support": "24/7 Support",
+        "gdpr": "100% GDPR",
+        "certified": "Certified Integration"
       }
     }
   }

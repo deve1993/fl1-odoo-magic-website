@@ -15,6 +15,7 @@ export default function Navbar() {
 
   const servicesMenu = [
     { name: t('odoo-dev'), href: '/odoo-dev' },
+    { name: t('superchat-integration'), href: '/superchat-integration' },
     { name: t('3cx'), href: '/3cx' },
     { name: t('website-dev'), href: '/website-dev' },
   ];
