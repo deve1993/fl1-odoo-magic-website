@@ -234,13 +234,14 @@ function WhatIsSection({ t }: { t: TranslationFunction }) {
             ].map((stat, index) => (
               <motion.div
                 key={index}
-                className="text-center p-6 bg-background-secondary/60 backdrop-blur-md rounded-2xl border border-white/10"
-                whileHover={{ y: -8, borderColor: 'rgba(255,255,255,0.2)' }}
+                className="text-center"
+                whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className={`text-5xl font-bold mb-2 bg-gradient-to-br ${stat.gradient} bg-clip-text text-transparent`}>
+                <h3 className={`text-5xl font-bold mb-3 bg-gradient-to-br ${stat.gradient} bg-clip-text text-transparent`}>
                   {stat.number}
                 </h3>
+                <div className={`h-[1px] w-16 mx-auto mb-3 bg-gradient-to-r ${stat.gradient}`} />
                 <p className="text-foreground-muted">{stat.label}</p>
               </motion.div>
             ))}
