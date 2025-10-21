@@ -119,7 +119,7 @@ export default function SuperChatPage() {
 // Hero Section
 function HeroSection({ t }: { t: TranslationFunction }) {
   return (
-    <section className="relative z-10 min-h-[90vh] flex items-center justify-center py-20 overflow-hidden">
+    <section className="relative z-10 min-h-[90vh] flex items-center justify-center pt-20 pb-8 overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           className="max-w-5xl mx-auto text-center"
@@ -201,7 +201,7 @@ function HeroSection({ t }: { t: TranslationFunction }) {
 // What is SuperChat Section
 function WhatIsSection({ t }: { t: TranslationFunction }) {
   return (
-    <section className="relative z-10 py-20">
+    <section className="relative z-10 pt-8 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
