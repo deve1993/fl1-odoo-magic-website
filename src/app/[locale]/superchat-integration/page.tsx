@@ -1,8 +1,9 @@
 'use client';
 
 import { useTranslations, useMessages } from 'next-intl';
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useMotionTemplate } from 'framer-motion';
 import Link from 'next/link';
+import { useState } from 'react';
 import {
   MessageCircle,
   Bot,
@@ -52,13 +53,6 @@ interface UseCaseItem {
   description: string;
   gradient: string;
   features: string[];
-}
-
-interface ProcessStep {
-  step: string;
-  title: string;
-  description: string;
-  icon: LucideIcon;
 }
 
 interface UseCaseMessages {
@@ -328,7 +322,10 @@ function BenefitsSection({ t }: { t: TranslationFunction }) {
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -8 }}
             >
-              <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-500">
+              {/* Glow blur effect on hover - dietro alla card */}
+              <div className={`absolute -inset-4 bg-gradient-to-r ${benefit.gradient} rounded-2xl opacity-0 group-hover:opacity-20 blur-2xl transition-opacity duration-500 -z-10`} />
+
+              <div className="relative h-full bg-background-secondary backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-500">
                 {/* Dot pattern */}
                 <div className="absolute inset-0 opacity-5 pointer-events-none rounded-2xl overflow-hidden">
                   <div
@@ -385,23 +382,36 @@ function ChannelsSection({ t }: { t: TranslationFunction }) {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
           {channels.map((channel, index) => (
             <motion.div
               key={index}
-              className="group"
-              initial={{ opacity: 0, scale: 0.9 }}
+              className="flex flex-col items-center"
+              initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.1 }}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
             >
-              <div className="relative bg-background-secondary/80 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
-                <div className={`w-16 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-br ${channel.color} flex items-center justify-center shadow-lg`}>
-                  <channel.icon className="w-8 h-8 text-white" />
+              <motion.div
+                className="flex flex-col items-center"
+                animate={{
+                  y: [0, -10, 0],
+                }}
+                transition={{
+                  duration: 3 + (index * 0.2),
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: index * 0.3
+                }}
+              >
+                {/* Icona con gradient */}
+                <div className={`w-20 h-20 mb-4 rounded-xl bg-gradient-to-br ${channel.color} flex items-center justify-center shadow-2xl`}>
+                  <channel.icon className="w-10 h-10 text-white" />
                 </div>
-                <p className="text-center font-semibold text-sm">{channel.name}</p>
-              </div>
+
+                {/* Nome canale */}
+                <p className="text-center font-semibold text-sm text-foreground">{channel.name}</p>
+              </motion.div>
             </motion.div>
           ))}
         </div>
@@ -412,36 +422,31 @@ function ChannelsSection({ t }: { t: TranslationFunction }) {
 
 // How It Works Process Section
 function ProcessSection({ t }: { t: TranslationFunction }) {
-  const steps: ProcessStep[] = [
+  const steps = [
     {
-      step: '1',
       title: t('process.step1.title'),
       description: t('process.step1.description'),
-      icon: Settings
+      gradient: 'from-green-500 to-emerald-500'
     },
     {
-      step: '2',
       title: t('process.step2.title'),
       description: t('process.step2.description'),
-      icon: Zap
+      gradient: 'from-blue-500 to-cyan-500'
     },
     {
-      step: '3',
       title: t('process.step3.title'),
       description: t('process.step3.description'),
-      icon: Bot
+      gradient: 'from-purple-500 to-pink-500'
     },
     {
-      step: '4',
       title: t('process.step4.title'),
       description: t('process.step4.description'),
-      icon: Users
+      gradient: 'from-orange-500 to-red-500'
     },
     {
-      step: '5',
       title: t('process.step5.title'),
       description: t('process.step5.description'),
-      icon: Sparkles
+      gradient: 'from-indigo-500 to-purple-500'
     }
   ];
 
@@ -464,42 +469,116 @@ function ProcessSection({ t }: { t: TranslationFunction }) {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              className="relative flex gap-6 mb-8 last:mb-0"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
-              {/* Timeline line */}
-              {index !== steps.length - 1 && (
-                <div className="absolute left-[30px] top-[70px] w-[2px] h-[calc(100%+2rem)] bg-gradient-to-b from-green-500/50 to-transparent" />
-              )}
+          {steps.map((step, index) => {
+            // Estrai il primo colore dal gradient per la linea
+            const lineColor = step.gradient.split(' ')[0]; // es. "from-green-500"
 
-              {/* Step number */}
-              <div className="relative">
-                <div className="w-[60px] h-[60px] rounded-full bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center shadow-lg">
-                  <step.icon className="w-7 h-7 text-white" />
-                </div>
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-background-secondary border border-green-500/20 backdrop-blur-sm">
-                  <span className="text-xs font-bold text-green-400">{step.step}</span>
-                </div>
-              </div>
+            return (
+              <motion.div
+                key={index}
+                className="relative pl-8 pb-12 last:pb-0"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2 }}
+              >
+                {/* Timeline line con colore dello step corrente */}
+                {index < steps.length - 1 && (
+                  <div className={`absolute left-3 top-6 bottom-0 w-0.5 bg-gradient-to-b ${lineColor} to-transparent`} />
+                )}
 
-              {/* Content */}
-              <div className="flex-1 pb-8">
-                <div className="bg-background-secondary/80 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
-                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                  <p className="text-foreground-muted">{step.description}</p>
+                {/* Step number */}
+                <div className={`absolute left-0 top-0 w-6 h-6 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center text-white text-xs font-bold shadow-lg`}>
+                  {index + 1}
                 </div>
-              </div>
-            </motion.div>
-          ))}
+
+                {/* Content */}
+                <div className="relative group">
+                  {/* Gradient border - visible only on hover */}
+                  <div className={`absolute -inset-[2px] bg-gradient-to-r ${step.gradient} rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm`} />
+
+                  <div className="relative bg-background-secondary/80 backdrop-blur-md rounded-xl p-6 border border-white/10 group-hover:border-transparent transition-all duration-500">
+                    <h3 className="text-2xl font-bold mb-2 text-foreground">{step.title}</h3>
+                    <p className="text-foreground-muted">{step.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
+  );
+}
+
+// Use Case Card with Spotlight Effect
+function UseCaseCard({ useCase, index }: { useCase: UseCaseItem; index: number }) {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent<HTMLDivElement>) {
+    const { left, top } = currentTarget.getBoundingClientRect();
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
+  }
+
+  // Spotlight mask effect
+  const spotlightMask = useMotionTemplate`
+    radial-gradient(
+      350px circle at ${mouseX}px ${mouseY}px,
+      white,
+      transparent 80%
+    )
+  `;
+
+  return (
+    <motion.div
+      className="group relative"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.1 }}
+      onMouseMove={handleMouseMove}
+    >
+      {/* Spotlight Effect with Mask */}
+      <motion.div
+        className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        style={{
+          background: `linear-gradient(to bottom right, ${
+            useCase.gradient.includes('blue') ? '#3b82f6, #06b6d4' :
+            useCase.gradient.includes('purple') ? '#a855f7, #ec4899' :
+            useCase.gradient.includes('emerald') ? '#10b981, #14b8a6' :
+            '#f97316, #ef4444'
+          })`,
+          maskImage: spotlightMask,
+          WebkitMaskImage: spotlightMask,
+        }}
+      />
+
+      <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-2xl p-8 border border-white/10 transition-all duration-500">
+        <div className="relative">
+          <span className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${useCase.gradient} text-white text-xs font-semibold mb-4`}>
+            {useCase.category}
+          </span>
+          <h3 className="text-2xl font-bold mb-3">{useCase.title}</h3>
+          <p className="text-foreground-muted mb-4">{useCase.description}</p>
+
+          <ul className="space-y-2">
+            {useCase.features.map((feature, idx) => (
+              <li key={idx} className="flex items-start gap-2">
+                <CheckCircle2 className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
+                  useCase.gradient.includes('blue') ? 'text-blue-500' :
+                  useCase.gradient.includes('purple') ? 'text-purple-500' :
+                  useCase.gradient.includes('emerald') ? 'text-emerald-500' :
+                  'text-orange-500'
+                }`} />
+                <span className="text-sm text-foreground-muted">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </motion.div>
   );
 }
 
@@ -560,37 +639,7 @@ function UseCasesSection({ t }: { t: TranslationFunction }) {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {useCases.map((useCase, index) => (
-            <motion.div
-              key={index}
-              className="group"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -8 }}
-            >
-              <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500">
-                {/* Gradient glow on hover */}
-                <div className={`absolute -inset-[2px] bg-gradient-to-br ${useCase.gradient} rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`} />
-
-                <div className="relative">
-                  <span className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${useCase.gradient} text-white text-xs font-semibold mb-4`}>
-                    {useCase.category}
-                  </span>
-                  <h3 className="text-2xl font-bold mb-3">{useCase.title}</h3>
-                  <p className="text-foreground-muted mb-4">{useCase.description}</p>
-
-                  <ul className="space-y-2">
-                    {useCase.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className={`w-5 h-5 mt-0.5 bg-gradient-to-r ${useCase.gradient} bg-clip-text text-transparent flex-shrink-0`} />
-                        <span className="text-sm text-foreground-muted">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
+            <UseCaseCard key={index} useCase={useCase} index={index} />
           ))}
         </div>
       </div>
@@ -627,7 +676,7 @@ function PricingSection({ t }: { t: TranslationFunction }) {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500">
+            <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500 flex flex-col">
               <div className="mb-6">
                 <span className="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold mb-4">
                   {t('pricing.starter.badge')}
@@ -641,7 +690,7 @@ function PricingSection({ t }: { t: TranslationFunction }) {
                 <p className="text-foreground-muted text-sm">{t('pricing.starter.ideal')}</p>
               </div>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 flex-1 mb-8">
                 {['channel', 'setup', 'support', 'training', 'updates'].map((feature) => (
                   <li key={feature} className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
@@ -668,7 +717,7 @@ function PricingSection({ t }: { t: TranslationFunction }) {
             transition={{ delay: 0.2 }}
           >
             <div className="absolute -inset-[2px] bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl opacity-50 blur-xl" />
-            <div className="relative h-full bg-background-secondary backdrop-blur-md rounded-3xl p-8 border-2 border-green-500/50">
+            <div className="relative h-full bg-background-secondary backdrop-blur-md rounded-3xl p-8 border-2 border-green-500/50 flex flex-col">
               <div className="mb-6">
                 <span className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white text-sm font-semibold mb-4">
                   {t('pricing.business.badge')}
@@ -682,7 +731,7 @@ function PricingSection({ t }: { t: TranslationFunction }) {
                 <p className="text-foreground-muted text-sm">{t('pricing.business.ideal')}</p>
               </div>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 flex-1 mb-8">
                 {['everything', 'channels', 'ai', 'support', 'integrations', 'priority', 'analytics', 'updates'].map((feature) => (
                   <li key={feature} className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
@@ -708,7 +757,7 @@ function PricingSection({ t }: { t: TranslationFunction }) {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500">
+            <div className="relative h-full bg-background-secondary/80 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500 flex flex-col">
               <div className="mb-6">
                 <span className="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm font-semibold mb-4">
                   {t('pricing.enterprise.badge')}
@@ -722,7 +771,7 @@ function PricingSection({ t }: { t: TranslationFunction }) {
                 <p className="text-foreground-muted text-sm">{t('pricing.enterprise.ideal')}</p>
               </div>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 flex-1 mb-8">
                 {['everything', 'custom', 'dedicated', 'training', 'sla', 'api', 'consulting', 'priority'].map((feature) => (
                   <li key={feature} className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
@@ -742,6 +791,23 @@ function PricingSection({ t }: { t: TranslationFunction }) {
         </div>
       </div>
     </section>
+  );
+}
+
+// Technical Feature Item
+function TechnicalFeatureItem({ feature, index }: { feature: { icon: LucideIcon; text: string }; index: number }) {
+  return (
+    <motion.div
+      className="text-center flex flex-col items-center gap-3 group"
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05 }}
+      whileHover={{ scale: 1.2 }}
+    >
+      <feature.icon className="w-10 h-10 text-green-400" />
+      <p className="text-xs font-medium text-foreground relative z-10">{feature.text}</p>
+    </motion.div>
   );
 }
 
@@ -771,20 +837,9 @@ function TechnicalFeaturesSection({ t }: { t: TranslationFunction }) {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              className="bg-background-secondary/60 backdrop-blur-md rounded-xl p-4 border border-white/10 text-center hover:border-white/20 transition-all duration-300"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
-              whileHover={{ scale: 1.05 }}
-            >
-              <feature.icon className="w-8 h-8 mx-auto mb-2 text-green-400" />
-              <p className="text-xs font-medium">{feature.text}</p>
-            </motion.div>
+            <TechnicalFeatureItem key={index} feature={feature} index={index} />
           ))}
         </div>
       </div>
@@ -804,11 +859,11 @@ function FinalCTASection({ t }: { t: TranslationFunction }) {
           viewport={{ once: true }}
         >
           <motion.div
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center"
           >
-            <MessageCircle className="w-10 h-10 text-white" />
+            <MessageCircle className="w-10 h-10 text-white rotate-[195deg]" />
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -835,18 +890,30 @@ function FinalCTASection({ t }: { t: TranslationFunction }) {
 
           {/* Trust indicators */}
           <div className="flex flex-wrap items-center justify-center gap-6 mt-8 text-sm text-foreground-muted">
-            <div className="flex items-center gap-2">
+            <motion.div
+              className="flex items-center gap-2 cursor-default"
+              whileHover={{ scale: 1.15, y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
               <Clock className="w-4 h-4 text-green-400" />
               <span>{t('cta.trust.support')}</span>
-            </div>
-            <div className="flex items-center gap-2">
+            </motion.div>
+            <motion.div
+              className="flex items-center gap-2 cursor-default"
+              whileHover={{ scale: 1.15, y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
               <Shield className="w-4 h-4 text-green-400" />
               <span>{t('cta.trust.gdpr')}</span>
-            </div>
-            <div className="flex items-center gap-2">
+            </motion.div>
+            <motion.div
+              className="flex items-center gap-2 cursor-default"
+              whileHover={{ scale: 1.15, y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
               <CheckCircle2 className="w-4 h-4 text-green-400" />
               <span>{t('cta.trust.certified')}</span>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -91,7 +91,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+420775113732" className="hover:text-primary transition-colors hover:underline">
+                <a
+                  href="tel:+420775113732"
+                  className="hover:text-primary transition-colors hover:underline"
+                  suppressHydrationWarning
+                >
                   +420 775 113 732
                 </a>
               </li>
