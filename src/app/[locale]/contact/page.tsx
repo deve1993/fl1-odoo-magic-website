@@ -97,7 +97,9 @@ function MainContactSection({ t }: { t: TranslationFunction }) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Implement form submission
-    console.log('Form submitted:', formData);
+    if (process.env.NODE_ENV === 'development') {
+      console.log('Form submitted:', formData);
+    }
   };
 
   const contactInfo = [

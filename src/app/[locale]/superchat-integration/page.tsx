@@ -3,7 +3,7 @@
 import { useTranslations, useMessages } from 'next-intl';
 import { motion, useMotionValue, useMotionTemplate } from 'framer-motion';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useMemo, memo } from 'react';
 import {
   MessageCircle,
   Bot,
@@ -254,7 +254,7 @@ function WhatIsSection({ t }: { t: TranslationFunction }) {
 
 // Integration Benefits Section
 function BenefitsSection({ t }: { t: TranslationFunction }) {
-  const benefits: BenefitItem[] = [
+  const benefits: BenefitItem[] = useMemo(() => [
     {
       icon: Zap,
       title: t('benefits.unified.title'),
@@ -291,7 +291,7 @@ function BenefitsSection({ t }: { t: TranslationFunction }) {
       description: t('benefits.multichannel.description'),
       gradient: 'from-pink-500 to-rose-500'
     }
-  ];
+  ], [t]);
 
   return (
     <section className="relative z-10 py-20">
@@ -355,14 +355,14 @@ function BenefitsSection({ t }: { t: TranslationFunction }) {
 
 // Supported Channels Section
 function ChannelsSection({ t }: { t: TranslationFunction }) {
-  const channels: ChannelItem[] = [
+  const channels: ChannelItem[] = useMemo(() => [
     { name: 'WhatsApp', icon: MessageCircle, color: 'from-green-500 to-emerald-500' },
     { name: 'Instagram', icon: Instagram, color: 'from-pink-500 to-purple-500' },
     { name: 'Facebook', icon: Facebook, color: 'from-blue-500 to-cyan-500' },
     { name: 'Email', icon: Mail, color: 'from-orange-500 to-red-500' },
     { name: 'Telegram', icon: Send, color: 'from-blue-400 to-sky-500' },
     { name: 'Live Chat', icon: MessageCircle, color: 'from-indigo-500 to-purple-500' }
-  ];
+  ], []);
 
   return (
     <section className="relative z-10 py-20">
@@ -422,7 +422,7 @@ function ChannelsSection({ t }: { t: TranslationFunction }) {
 
 // How It Works Process Section
 function ProcessSection({ t }: { t: TranslationFunction }) {
-  const steps = [
+  const steps = useMemo(() => [
     {
       title: t('process.step1.title'),
       description: t('process.step1.description'),
@@ -448,7 +448,7 @@ function ProcessSection({ t }: { t: TranslationFunction }) {
       description: t('process.step5.description'),
       gradient: 'from-indigo-500 to-purple-500'
     }
-  ];
+  ], [t]);
 
   return (
     <section className="relative z-10 py-20">
@@ -813,14 +813,14 @@ function TechnicalFeatureItem({ feature, index }: { feature: { icon: LucideIcon;
 
 // Technical Features Section
 function TechnicalFeaturesSection({ t }: { t: TranslationFunction }) {
-  const features = [
+  const features = useMemo(() => [
     { icon: Shield, text: t('technical.gdpr') },
     { icon: Zap, text: t('technical.api') },
     { icon: Target, text: t('technical.webhook') },
     { icon: Settings, text: t('technical.templates') },
     { icon: BarChart3, text: t('technical.analytics') },
     { icon: Smartphone, text: t('technical.mobile') }
-  ];
+  ], [t]);
 
   return (
     <section className="relative z-10 py-20">
